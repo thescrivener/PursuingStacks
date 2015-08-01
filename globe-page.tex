@@ -1,0 +1,31 @@
+\RequirePackage{pdf14}
+\documentclass[letterpaper,10pt,leqno,twoside,openright]{memoir}
+\usepackage{fixltx2e}[2014/09/29]
+\usepackage{microtype}
+\usepackage{mempatch}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[sfscaled=false,ttscaled=false,charter]{mathdesign} % MathDesign w Bitstream Charter
+\makeatletter
+\def\fvm@ratio{0.9}%
+\def\fvs@ratio{0.9}%
+\def\fve@ratio{0.9}%
+\input{mdsffont.def}
+\input{mdttfont.def}
+\makeatother
+\usepackage{mathtools}
+\let\proof\relax
+\let\endproof\relax
+\usepackage{tikz-cd}
+\tikzset{every picture/.style={line width=0.58pt}}
+\begin{document}
+\thispagestyle{empty}
+\begin{tikzpicture}[line cap=round]
+  \draw (0,0) ++(110:0.8ex) ++(70:0.8ex) arc (70:-70:0.8ex) arc (250:110:0.8ex);%
+  \draw (0.15ex,0) ++(70:0.8ex) ++(110:0.7ex) arc (110:250:0.7ex);%
+\end{tikzpicture}%
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

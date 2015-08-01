@@ -1,0 +1,1864 @@
+%% Anti-Copyright 2015 - the scrivener
+
+\chapter{Linearization of homotopy types (2)}
+\label{ch:VII}
+
+\noindent\hfill\ondate{22.10.}\pspage{555}\par
+
+% 133
+\hangsection{Birth of Suleyman.}\label{sec:133}%
+Again nearly a week has passed by without writing any notes -- the
+tasks and surprises of life took up almost entirely my attention and
+my energy. It were days again rich in manifold events -- most
+auspicious one surely being the birth, three days ago, of a little
+boy, Suleyman, by my daughter. The birth took place at ten in the
+evening, in the house of a common friend, in a nearby village where my
+daughter had been awaiting the event in quietness. It came while
+everyone in the house was in bed, the nearly five years old girl
+sleeping next to her mother giving birth. The girl awoke just after
+the boy had come out, and then ran to tell Y (their hostess) she got a
+little brother. When I came half an hour later, the little girl was
+radiant with joy and wonder, while telling me in whispers, sitting
+next to her mother and to her newborn brother, what had just
+happened. As usual with grownups, I listened only distractedly,
+anxious as I was to be useful the best I could. There wasn't too much
+by then I could do, though, as the mother knew well what was to be
+done and how to do it herself -- presently, tie the chord twice, and
+then cut it in-between. ``Now you are on your own, boy!'' she told him
+with a smile when it was done. A little later she and Y helped the
+baby to a warm bath -- and still later, while the girl was asleep next
+to her brother and Y in her room, the mother took a warm bath herself
+in the same basin, to help finishing with the labors. When her mother
+arrived a couple of hours later, everybody in the house was asleep
+except me in the room underneath, awaiting her arrival while taking
+care of some fallen fruit which had been gathered that very day.
+
+This birth I feel has been beneficial, a blessing I might say, in a
+number of ways. The very first one I strongly perceived, was about
+Suleyman's sister, who had so strongly participated in his birth. This
+girl has been marked by conflict, and her being is in a state of
+division, surely as strongly as any other child of her age. However,
+after this experience, if ever her time should come to bear a child
+and give birth, she will do so with joy and with confidence, with no
+secret fear or refusal interfering with her labors and with the act of
+giving birth -- this most extraordinary act of all, maybe, which a
+human being is allowed to accomplish; this unique privilege of woman
+over man, this blessing, carried by so many like a burden and like a
+curse\dots\enspace And there are other blessing too in this birth
+which I perceive more or less clearly, and surely others still which
+escape my conscious attention.\pspage{556}
+
+I suspect that potentially, in every single instance anew, the act of
+giving birth, and the sudden arrival and presence of a newborn, are a
+blessing, carry tremendous power. In many cases, however, the greatest
+part (if not all) of this beneficial power is lost, dispersed through
+the action of crispation and fear (including the compulsory medical
+``mise en scène'', from which it gets over harder to get rid in our
+well-to-do countries\dots). A great deal could be said on this matter
+in general, while my own leanings at present would be, rather, to
+ponder about the manifold personal aspects and meaning of the
+particular, manifold event I have just been involved in. But to yield
+fully now to this leaning of mine would mean to stop short with the
+mathematical investigation and with these notes. The drive carrying
+this investigation is very much alive, though, and I have been feeling
+it was time getting back to work -- to this kind of work, I mean.
+
+This brings me to somewhat more mundane matters -- such as the
+beginning of school and teaching duties. This year I am in charge of
+preparing the ``concours d'agrégation'',\scrcomment{these are the
+  civil service competitive examinations for high school (lycée)
+  teachers\dots} something which, I was afraid, would be rather
+dull. Rather surprisingly, the first session of common work on a
+``problème d'agrègue'' wasn't dull at all -- the problem looked
+interesting, and two of the three students who turned up so far were
+interested indeed, and the atmosphere relaxed and friendly. It looks
+as though I was going again to learn some mathematics through
+teaching, or at any rate to apply things the way I have known and
+understood them (in a somewhat ``highbrow'' way, maybe) to the more
+down-to-earth vision going with a particular curriculum (here the
+``programme d'agrègue'') and corresponding virtuosity tests --
+something rather far, of course, from my own relation to mathematical
+substance! Besides these arpeggios, we started a microseminar with
+three participants besides me, on the Teichmüller groupoids; I expect
+one of the participants is going to take a really active interest in
+the stuff. I have been feeling somewhat reluctant to start this
+seminar while still involved with the homotopy story, which is going
+to keep me busy easily for the next six months still, maybe even
+longer. Sure enough, the little I told us about some of the structures
+and operations to be investigated, while progressively gaining view of
+them again after a long oblivion -- and as discovering them again
+hesitatingly, while pulling them out of the mist by bribes and bits --
+this little was enough to revive the special fascination of these
+structures, and all that goes with them.\pspage{557} It seems to me
+there hasn't been a single thing in mathematics, including
+motives,\scrcomment{unreadable margin note}
+which has exerted such a fascination upon me. It will be hard, I'm
+afraid, to carry on a seminar on such stuff, and go on and carry to
+their (hopefully happy!) end those ponderings and notes on homotopical
+algebra, so-called -- and a somewhat crazy one too at times, I am
+afraid! We'll see what comes out of all this! The night after the
+seminar session at any rate, and already during the two hours drive
+home, the Teichmüller stuff was brewing anew in my head. Maybe it
+would have gone on for days, but next day already several things came
+up demanding special attention, last not least being the birth of
+Suleyman\dots 
+
+\bigbreak\scrcomment{the typescript says ``26.8.'' but it
+  must be a misprint!}
+
+\noindent\hfill\ondate{26.10.}\par
+
+% 134
+\hangsection[Back to linearization in the modelizer \Cat: another
+\dots]{Back to linearization in the modelizer
+  \texorpdfstring{\Cat}{(Cat)}: another handful of questions around
+  Kan-Dold-Puppe.}\label{sec:134}%
+It is time to come back to the ``review'' of linearization of
+(ordinary) homotopy types, and the homology and cohomology formalism
+in the context of the modelizer \Cat, which has been pushed aside now
+for over two months, for the sake of that endless digression on
+schematization of homotopy types. The strong tie between these two
+strains of reflection has been the equal importance in both of the
+linearization process. Technically speaking though, linearization, as
+finally handled in the previous chapter (via the so-called
+``integrators''), looks pretty much different from the similar
+operation in the schematic set-up, due (at least partly) to the choice
+we made of models for expressing schematic homotopy types, namely
+taking semisimplicial scheme-like objects; which means, notably,
+working with $\Simplex$ rather than more general test categories, and
+relying heavily on the Kan-Dold-Puppe relationship. In the discrete
+set-up, it turned out (somewhat unexpectedly) that the latter can be
+replaced, when working with more general categories $A$ than
+$\Simplex$ (which need not even be test categories or anything of the
+kind), by the $\mathrm Lp_!\supab$ operation (when $p:A\to e$ is the
+map from $A$ to the final object $e$ in \Cat), computable in terms of
+a choice of an ``integrator'' for $A$. More specifically, recalling
+that
+\begin{equation}
+  \label{eq:134.1}
+  p_!\supab : \Ahatab \to \Ab\tag{1}
+\end{equation}
+is defined as the left adjoint of the inverse image functor
+\[p^*:\Ab\to\Ahatab,\]
+associating to every abelian group the corresponding ``context''
+abelian\pspage{558} presheaf on $A$, and
+\begin{equation}
+  \label{eq:134.2}
+  \LH_\bullet = \mathrm Lp_!\supab : \D^-(\Ahatab) \to \D^-\Ab, \quad
+  \text{inducing $\D_\bullet(\Ahatab)\to\D_\bullet\Ab$}\tag{2}
+\end{equation}
+is its left derived functor (computed using projective resolution of
+complexes bounded above in \Ahatab), composing \eqref{eq:134.2} with
+the tautological inclusion functor
+\[\Ahatab\hookrightarrow\D_\bullet(\Ahatab)\hookrightarrow
+  \D^-(\Ahatab),\]
+we get a canonical functor
+\begin{equation}
+  \label{eq:134.3}
+  \mathrm Lp_!\supab \restrto \Ahatab:\Ahatab\to \D_\bullet\Ab,\tag{3}
+\end{equation}
+which may be expressed in terms of an integrator $L_\bullet^B$ for
+$B=A\op$, i.e., a projective resolution of the constant presheaf
+$\bZ_B$ in \Bhatab, as the composition
+\begin{equation}
+  \label{eq:134.4}
+  \Ahatab\to\Ch_\bullet\Ab\to\D_\bullet\Ab,\tag{4}
+\end{equation}
+where the first arrow is
+\begin{equation}
+  \label{eq:134.5}
+  F\mapsto F *_\bZ L_\bullet^B : \Ahatab\to\Ch_\bullet\Ab,\tag{5}
+\end{equation}
+and the second is the canonical localization functor. The functors
+\eqref{eq:134.2} and \eqref{eq:134.3} may be viewed as the (total)
+homology functors of $A$, with coefficients in complexes of abelian
+presheaves, resp.\ in abelian presheaves simply. When we focus
+attention on the latter, we may introduce in \Ahatab{} the set of
+arrows which become isomorphisms under the total homology functor
+\eqref{eq:134.3}, let's call them ``\emph{abelian weak equivalences}''
+in \Ahatab, not to be confused with the notion of quasi-isomorphism
+for a map between complexes in \Ahatab. Let's denote by
+\begin{equation}
+  \label{eq:134.6}
+  \HotabOf_A = (W_A\supab)^{-1}\Ahatab\tag{6}
+\end{equation}
+the corresponding localized category of \Ahatab, where $W_A\supab$
+denotes the set of abelian weak equivalences in \Ahatab. Thus, the
+choice of an integrator $L_\bullet^B$ for $A$ (i.e., a cointegrator
+for $B$) gives rise to a commutative diagram of functors
+\begin{equation}
+  \label{eq:134.7}
+  \begin{tabular}{@{}c@{}}
+    \begin{tikzcd}[baseline=(O.base)]
+      \Ahatab \ar[r]\ar[d] & \Ch_\bullet\Ab\ar[d] \\
+      \HotabOf_A \ar[r] &
+      |[alias=O]| {\ooalign{$\D_\bullet\Ab$\cr$\D_\bullet\Ab\eqdef\HotabOf$\hidewidth\cr}}
+    \end{tikzcd}\qquad\qquad,
+  \end{tabular}\tag{7}
+\end{equation}
+where the lower horizontal arrow is defined via \eqref{eq:134.3}
+(independently of the choice of $L_\bullet^B$), the vertical arrows
+being the localization functors. Beware that even when $A=\Simplex$
+and $L_\bullet^B$ is the usual, ``standard''\pspage{559} integrator
+for $\Simplex$, the upper horizontal arrow in \eqref{eq:134.7} is
+\emph{not} the Kan-Dold-Puppe equivalence of categories, it has to be
+followed still by the ``normalization'' operation. Thus, \emph{we
+  certainly should not expect in any case the functor \eqref{eq:134.5}
+  to be an equivalence -- however, we suspect that when $A$ is a test
+  category} (maybe even a weak test category would do it), \emph{then
+  the lower horizontal arrow in \eqref{eq:134.7}}
+\begin{equation}
+  \label{eq:134.8}
+  \HotabOf_A \to \D_\bullet\Ab=\HotabOf \tag{8}
+\end{equation}
+\emph{is an equivalence of categories}. Whenever true, for a given
+category $A$, this statement looks like a reasonable substitute (on
+the level of the relevant derived categories) for the Kan-Dold-Puppe
+theorem, known in the two cases $\Simplex$ and $\Globe$.
+
+There are however still two important extra features in the case
+$A=\Simplex$, which deserve to be understood in the case of more
+general $A$. One is that a map $u:F\to G$ in \Ahatab{} is in
+$W_A\supab$ (i.e., is an ``abelian weak equivalence'') if{f} it is in
+$W_A$, i.e., if{f} it is a weak equivalence when forgetting the
+abelian structures. In terms of a final object $e$ in $A$ (when such
+object exists indeed),\footnote{it is enough that $A$ be $1$-connected
+  instead of having a final object} viewing the categories $A_{/F}$
+(for $F$ in \Ahatab) pointed by the zero map $e\to F$, which yields
+the necessary base-point $e_F$ for defining homotopy invariants
+$\pi_i(F)$ for $i\ge0$, the relationship just considered between
+abelian weak equivalence and weak equivalence, will follow of course
+whenever we have functorial isomorphisms
+\begin{equation}
+  \label{eq:134.9}
+  \pi_i(F) \eqdef \pi_i(A_{/F},e_F) \simeq \mathrm H_i(A,F),\tag{9}
+\end{equation}
+which are known to exist indeed in the case $A=\Simplex$. It should be
+noted that in section~\ref{sec:92}, when starting (in a somewhat
+casual way) with some reflections on ``abelianization'', we introduced
+a category (denoted by $\HotabOf_A$) by localizing \Ahatab{} with
+respect to the maps which are weak equivalences (when forgetting the
+abelian structures), whereas it has now become clear that, in case the
+latter should not coincide with the ``abelian weak equivalences''
+defined in terms of linearization or homology, it is the category
+\eqref{eq:134.6} definitely which is the right one. Still, the
+question of defining isomorphisms \eqref{eq:134.9} when $A$ has a
+final object, and whether the equality
+\begin{equation}
+  \label{eq:134.10}
+  W_A\supab = \forg_A^{-1}(W_A)\tag{10}
+\end{equation}
+holds, where
+\[\forg_A:\Ahatab\to\Ahat\]
+is the ``forgetful functor'', should be settled for general $A$.
+
+The\pspage{560} other ``extra feature'' is about the relationship of
+$W_A\supab$ with the notion of homotopism. In case $A=\Simplex$, a map
+in \Ahatab{} is a weak equivalence (or equivalently, an abelian weak
+equivalence) if{f} it is a homotopism when forgetting the abelian
+structures -- this follows from the well-known fact that
+semisimplicial groups are Kan complexes. There is of course also a
+notion of homotopism in the stronger abelian sense -- a particular
+case of the notion of a homotopism between semisimplicial objects in
+an arbitrary category (here in \Ab). The Kan-Dold-Puppe theory implies
+that if $F$ and $G$ in \Simplexhatab{} have as values projective
+\bZ-modules, then a map $F\to G$ in \Simplexhatab{} is a weak
+equivalence if{f} it is an ``abelian'' homotopism; and likewise, two
+maps $u,v: F\rightrightarrows G$ are equal in $\HotabOf_\Simplex$ if{f}
+they are homotopic (in the strict, \emph{abelian} sense of the
+word). The corresponding statements still make sense and are true,
+when replacing \bZ{} by any ground ring $k$, working in
+$\Simplex_k\adjuphat$ rather than $\Simplex_\bZ\adjuphat =
+\Simplexhatab$ -- and more generally still, when working in
+\[\Simplex\adjuphat_\scrM = \bHom(\Simplexop, \scrM),\]
+where \scrM{} is any abelian category. Now, replacing $\Simplex$ by an
+arbitrary object $A$ in \Cat, these statements still make sense, it
+would seem, provided we got on \Ahat{} a suitable ``homotopy
+structure'', more specifically, a suitable ``homotopy interval
+structure'' (in the sense of section~\ref{sec:51}). In
+section~\ref{sec:97} (p.~\ref{p:355}) we reviewed the three standard
+homotopy interval structures which may be introduced on a category
+\Ahat, and their relationships -- the main impression remaining was
+that, in case $A$ is a \emph{contractor} (cf.\ section~\ref{sec:95}),
+those three structures coincide, and may be defined also in terms of a
+\emph{contractibility structure} on \Ahat{} (section~\ref{sec:51}),
+the latter giving rise (via the general construction of
+section~\ref{sec:79}) to the usual notion of weak equivalence $W_A$ in
+\Ahat. Thus, we may hope that the feature just mentioned for
+$\Simplexhat$ may be valid too for \Ahat, whenever $A$ is a
+contractor. In case $A$ is only a test category, then the most
+reasonable homotopy interval structure on \Ahat, I would think, which
+possibly may still yield the desired ``extra feature'', is the one
+defined in terms of the set $W_A$ of weak equivalences in \Ahat{} as
+in section~\ref{sec:54} (namely $h_{W_A}$).
+
+% 135
+\hangsection[Proof of ``integrators are abelianizators'' (block
+against \dots]{Proof of ``integrators are abelianizators''
+  \texorpdfstring{\textup(}{(}block against homology
+  receding?\texorpdfstring{\textup)}{)}.}\label{sec:135}%
+This handful of questions (some of which we met with before) is mainly
+a way of coming into touch again with the abelianization story, which
+has been becoming somewhat remote during the previous two months. I am
+not sure I am going to\pspage{561} make any attempt, now or later, to
+come to an answer. The last one, anyhow, seems closely related to the
+formalism of closed model structure on categories \Ahat, and the
+proper place for dealing with it would seem to be rather next chapter
+VII,\scrcomment{I guess AG thought this was still
+  Part~\ref{ch:VI}. Since there was never a second volume of PS, we
+  refer to \textcite{Cisinski2006} for a discussion of closed model
+  structures on presheaf topoi, now known as \emph{Cisinski model
+    structures}\dots} where such structures are going to be
+studied. What I would like to do, however, here-and-now, is to
+establish at last the long promised relationship ``integrators are
+abelianizators'', which we have kept turning around and postponing
+ever since section~\ref{sec:99}, when those integrators were finally
+introduced, mainly for this purpose (of furnishing us with
+``abelianizators'').
+
+First of all, I should be more outspoken than I have been before, in
+defining the ``\emph{abelianization functor}'' (or ``\emph{absolute
+  Whitehead functor}''):
+\begin{equation}
+  \label{eq:135.1}
+  \bWh: \Hot\eqdef\scrW^{-1}\Cat \to \HotabOf
+  \eqdef\D_\bullet\Ab,\tag{1} 
+\end{equation}
+without any use of the semisimplicial machinery which, at the
+beginning of our reflections, had rather obscured the picture
+(section~\ref{sec:92}). Defining such a functor amounts to defining a
+functor
+\begin{equation}
+  \label{eq:135.2}
+  \LH_\bullet:\Cat\to\D_\bullet\Ab,\tag{2}
+\end{equation}
+or ``total homology functor'', which should take weak equivalences
+into isomorphisms. For an object $A$ in \Cat, we define
+\begin{equation}
+  \label{eq:135.3}
+  \LH_\bullet(A) = \LH_\bullet(A,\bZ_A) =
+  \mathrm L{p_A}_!\supab(\bZ_A),\tag{3} 
+\end{equation}
+where $\bZ_A$ is the constant abelian presheaf on $A$ with value \bZ,
+and
+\[p_A : A\to e\]
+is the map to the final object of \Cat. We have to define the
+functorial dependence on $A$. More generally, for pairs
+\[(A,F), \quad\text{with $A$ in \Cat, $F$ in \Ahatab,}\]
+the expression
+\[\LH_\bullet(A,F)\quad\text{in $\D_\bullet\Ab$}\]
+is functorial with respect to the pair $(A,F)$, where a map
+\[(A,F) \to (A',F')\]
+is defined to be a pair $(f,u)$, where
+\begin{equation}
+  \label{eq:135.4}
+  f: A\to A', \quad
+  u: F\to f^*(F'),\tag{4}
+\end{equation}
+the composition of maps being the obvious one. To see that such a pair
+defines a map
+\begin{equation}
+  \label{eq:135.5}
+  \LH_\bullet(f,u): \LH_\bullet(A,F) \to \LH_\bullet(A',F'),\tag{5}
+\end{equation}
+we\pspage{562} use
+\[p_A = p_{A'} \circ f,\]
+hence
+\begin{equation}
+  \label{eq:135.star}
+  (p_A)_!\supab \simeq (p_{A'})_!\supab \circ f_!\supab,
+  \quad\text{and}\quad
+  \mathrm L(p_A)_!\supab \simeq \mathrm L(p_{A'})_!\supab
+  \circ \mathrm Lf_!\supab,\tag{*}
+\end{equation}
+taking into account that $f_!\supab$ maps projectives to
+projectives. Hence, we get
+\[\LH_\bullet(A,F)\eqdef \mathrm L(p_A)_!\supab(F) \simeq
+  \mathrm L(p_{A'})_!\supab(\mathrm Lf_!\supab(F)) \eqdef
+  \LH_\bullet(A',\mathrm Lf_!\supab(F)).\]
+This, in order to get \eqref{eq:135.5}, we need only define a map in
+$\D^-({A'}\uphat\subab)$
+\begin{equation}
+  \label{eq:135.6}
+  \mathrm Lf_!\supab(F)\to F',\tag{6}
+\end{equation}
+which will be obtained as the composition
+\begin{equation}
+  \label{eq:135.6prime}
+  \mathrm Lf_!\supab(F)\to f_!\supab(F) \to F',\tag{6'}
+\end{equation}
+where the first map in \eqref{eq:135.6prime} is the canonical
+augmentation maps towards the $\mathrm H_0$ object, and where the
+second corresponds to $u$ in \eqref{eq:135.4} by adjunction. This
+defines the map \eqref{eq:135.5}, and compatibility with compositions
+should be a tautology. Hence the functor \eqref{eq:135.2}. To get
+\eqref{eq:135.1}, we still have to check that when
+\[f:A\to A'\]
+is a weak equivalence, then
+\[\LH_\bullet(f): \LH_\bullet(A) \to \LH_\bullet(A')\]
+is an isomorphism in $\D_\bullet\Ab$. It amounts to the same to check
+that for any object $K^\bullet$ in $\D^+\Ab$, the corresponding map
+between the $\RHom$'s with values in $K^\bullet$ is an isomorphism in
+$\D^+\Ab$. But the latter map can be identified with the map for
+\emph{cohomology}
+\[\RH^\bullet(A', K_{A'}^\bullet) \to \RH^\bullet(A, K_A^\bullet),\]
+with coefficients in the constant complex of presheaves defined by
+$K^\bullet$ on $A'$ and on $A$, which is an isomorphism, by the very
+definition of weak equivalences in \Cat{} via cohomology.
+
+Now, the statement ``an integrator is an abelianizator'' may be
+rephrased rather evidently, without any reference to a given
+integrator, as merely the commutativity, up to canonical isomorphism,
+of the following diagram for a given $A$ in \Cat:\pspage{563}
+\begin{equation}
+  \label{eq:135.7}
+  \begin{tabular}{@{}c@{}}
+    \begin{tikzcd}[baseline=(O.base),column sep=large]
+      \Ahat \ar[r,"\varphi_A"]\ar[d,"\Wh_A"'] &
+      \Hot\ar[d,"{\bWh}"] \\
+      \Ahatab \ar[r,"{\LH_\bullet(A,{-})}"'] &
+      |[alias=O]| {\ooalign{$\Hotab$\cr$\Hotab\eqdef\D_\bullet\Ab$\hidewidth\cr}}
+    \end{tikzcd}\qquad\qquad,
+  \end{tabular}\tag{7}
+\end{equation}
+or equivalently, of the corresponding diagram where the categories
+\Ahat, \Ahatab{} are replaced by the relevant localizations:
+\begin{equation}
+  \label{eq:135.7prime}
+  \begin{tabular}{@{}c@{}}
+    \begin{tikzcd}[baseline=(O.base)]
+      \HotOf_A \ar[r]\ar[d] &
+      \HotOf \ar[d] \\
+      \HotabOf_A \ar[r] &
+      |[alias=O]| \HotabOf
+    \end{tikzcd}.
+  \end{tabular}\tag{7'}
+\end{equation}
+The left vertical arrow in \eqref{eq:135.7} is of course the trivial
+abelianization functor in \Ahat:
+\[\Wh_A:\Ahat\to\Ahatab, \quad
+  X\mapsto \bZ^{(X)}=\bigl(a\mapsto \bZ^{(X(a))}\bigr).\]
+Going back to the definitions, the commutativity of \eqref{eq:135.7}
+up to isomorphism, means that for $X$ in \Ahat, there is a canonical
+isomorphism
+\begin{equation}
+  \label{eq:135.8}
+  \LH_\bullet(A_{/X},\bZ) \simeq\LH_\bullet(A, \bZ^{(X)}),\tag{8}
+\end{equation}
+functorial with respect to $X$. To define \eqref{eq:135.8}, let
+\[f : A'\eqdef A_{/X} \to A\]
+be the canonical functor, then we get (using \eqref{eq:135.star} of
+the previous page, with the roles of $A$ and $A'$ reversed)
+\[\LH_\bullet(A',\bZ_{A'}) \simeq \LH_\bullet(A, \mathrm
+  Lf_!\supab(\bZ_{A'})),\]
+and the relation \eqref{eq:135.8} follows from the more precise
+relation
+\begin{equation}
+  \label{eq:135.9}
+  \mathrm Lf_!\supab(\bZ_{A'}) \tosim \bZ^{(X)}.\tag{9}
+\end{equation}
+To get \eqref{eq:135.9}, we remark that we have the tautological
+relation
+\begin{equation}
+  \label{eq:135.9prime}
+  f_!\supab(\bZ_{A'}) \simeq \bZ^{(X)},\tag{9'}
+\end{equation}
+hence the map \eqref{eq:135.9}. To prove it is an isomorphism amounts
+to proving
+\[\mathrm L_if_!\supab(\bZ_{A'}) = 0\quad\text{for $i>0$,}\]
+but we have indeed
+\begin{equation}
+  \label{eq:135.10}
+  \mathrm L_if_!\supab = 0\quad
+  \text{for $i>0$, i.e., $f_!\supab$ is \emph{exact},}
+  \tag{10}
+\end{equation}
+not only right exact, a rather special feature, valid for a
+localization\pspage{564} functor like $f:A_{/X}\to A$, namely for a
+functor which is fibering (in the sense of the theory of ``fibered
+categories'') and has discrete fibers. It comes from the explicit
+description of $f_!\supab$, as
+\begin{equation}
+  \label{eq:135.11}
+  f_!\supab(F) = \Bigl( a\mapsto \bigoplus_{u\in X(a)} F(a)_u\Bigr),\tag{11}
+\end{equation}
+where, for a group object $F$ in $\Ahat_{/X}\simeq(A_{/X})\uphat$, and
+$u$ in $X(a)$ (defining therefore an object of $A_{/X}$) $F(a)_u = $
+fiber of $F(a)$ at $u\in X(a)$ is the corresponding abelian
+group. I'll leave the proof of \eqref{eq:135.11} to the reader, it
+should be more or less tautological.
+
+Once the whole proof is written down, it looks so simple that I feel
+rather stupid and can't quite understand why I have turned around it
+for so long, rather than writing it down right away more than three
+months ago! The reason surely is that I have been accustomed so
+strongly to expressing everything via cohomology rather than homology,
+that there has been something like a block against doing work
+homologically, when it is homology which is involved. This block has
+remained even after I took the trouble of telling myself quite
+outspokenly (in section~\ref{sec:100}) that homology was just as
+important and meaningful as cohomology, and more specifically still
+(in section~\ref{sec:103}) that the proof I had in mind first, via
+Quillen's result about $A\simeq A\op$ in \Hot{} and via cohomology,
+was an ``awkward'', an ``upside-down'', one. The review on
+abelianization I went into just after made things rather worse in a
+sense, as there I took great pains to make the point that homology and
+cohomology were just one and the same thing (so why bother about
+homology!). Still, I \emph{did} develop some typically homologically
+flavored formalism with the $*_k$ operation, and I hope that at the
+end that block of mine is going to recede\dots
+
+\bigbreak
+
+\noindent\hfill\ondate{27.10.}\pspage{565}\par
+
+% 136
+\hangsection[Preliminary perplexities about a full-fledged ``six
+\dots]{Preliminary perplexities about a full-fledged ``six operations
+  duality formalism'' within
+  \texorpdfstring{\Cat}{(Cat)}.}\label{sec:136}%
+I just spent a couple of hours, after reading the notes of last night,
+trying to get a better feeling of the basic homology operation in the
+context of the basic localizer \Cat, namely taking the left derived
+functor $\mathrm Lf_!\supab$ of the ``unusual'' direct image functor
+for abelian presheaves, associated to a map
+\[f: A \to B\]
+in \Cat. This led me to read again the notes of section~\ref{sec:92},
+when I unsuspectingly started on an ``afterthought, later gradually
+turning into a systematic reflection on abelianization. With a
+distance of nearly four months, what strikes me most now in these
+notes is awkwardness of the approach followed at start, when yielding
+to the reflex of laziness of describing abelianization of homotopy
+types via the semisimplicial grindmill. The uneasiness in these notes
+is obvious throughout -- I kind of knew ``au fond''\scrcomment{``au
+  fond'' -- at the bottom -- deep down} that dragging in
+the particular test category $\Simplex$ was rather silly. In
+section~\ref{sec:100} only, does it get clear that the best
+description for abelianization, with the modelizer \Cat, is via the
+unusual direct image $p_!\supab$ corresponding to the projection
+\[p=p_A:A\to e\]
+of the ``model'' $A$ in \Cat{} to the final object (formulæ
+\eqref{eq:100.11} and \eqref{eq:100.12} page~\ref{p:359}), by applying
+$p_!\supab$ to a ``cointegrator'' $L_\bullet^A$ for $A$, namely to a
+projective resolution of $\bZ_A$ (where $A$ is written $B$ by the way,
+as I had been led before to replace a given $A$ in \Cat{} by its
+``dual'' or opposite $B=A\op$, bound as I was for interpreting
+``integrators'' for $A$ in terms of ``cointegrators'' for $B$\dots);
+and in the next section the step is finally taken (against the
+``block''!) to write
+\[p_!\supab(L_\bullet^B)=\mathrm Lp_!\supab(\bZ_B),\]
+which inserts abelianization into the familiar formalism of (left)
+derived functors of standard functors. The reasonable next thing to do
+was of course what I finally did only yesterday, namely check the
+commutativity of the diagram \eqref{eq:135.7} of p.~\ref{p:563},
+namely compatibility of this notion of abelianization (or homology)
+with Whitehead's abelianization, when working with models coming from
+\Ahat, $A$ any object in \Cat. This by the way, when applied to the
+case $A=\Simplex$, gives at once the equivalence of the intrinsic
+definition of abelianization, with the semisimplicial one we started
+with -- provided we remark that in this case, $\mathrm Lp_!\supab$
+(rather, its restriction to $\Simplexhatab$) may be equally
+interpreted as the Kan-Dold-Puppe\pspage{566} functor (more
+accurately, the composition of the latter with the localization
+functor $\Ch_\bullet\Ab\to\D_\bullet\Ab=\HotabOf$). The equivalence of
+the two definitions of abelianization is mentioned on the same
+p.~\ref{p:369}, somewhat as a chore I didn't really feel then to dive
+into. Besides the ``block'' against homology, the picture was being
+obscured, too, by the ``computational'' idea I kept in mind, of
+expressing $\mathrm Lp_!\supab(F)$ for $F$ in \Ahatab{} in terms of an
+``integrator'' for $A$, i.e., as $F *_\bZ L_\bullet^B$ -- whereas I
+should have known best myself that for establishing formal properties
+relating various derived functors, the particular approaches used for
+``computing'' them more or less elegantly are wholly irrelevant\dots
+
+One teaching I am getting out of all this, is that when expressing
+abelianization, or presumably any other kind of notion or operation of
+significance for homotopy types, one should be careful, for any
+modelizer one chooses to work in, to dig out the description which
+fits smoothly those particular models. Clearly, when working with
+semisimplicial models, the description via tautological abelianization
+$\Wh_\Simplex$ and using Kan-Dold-Puppe is the best. When working
+within the modelizer \Cat, though, making the detour through
+\Simplexhat{} is awkward and makes us just miss the relevant
+facts. Once we got this, it gets clear, too, what to do when
+$\Simplex$ is replaced by any other object $A$ in \Cat{} when taking
+models in \Ahat{} (never minding even whether \Ahat{} is indeed a
+``modelizer''): namely, apply $\Wh_A$, and take total homology!
+
+This brings to my mind another example, very similar indeed. Some time
+after I got across Thomason's nice paper, showing that \Cat{} is a
+closed model category (see comments in section~\ref{sec:87}), I got
+from Tim Porter another reprint of
+Thomason's,\scrcomment{\textcite{Thomason1979}} where he gives the
+description of ``homotopy colimits'' (or ``integration'', as I call
+it) within the modelizer \Cat, in terms of the total category
+associated to a fibered category (compare section~\ref{sec:69}). There
+he grinds through a tedious, highly technical proof, whereas the
+direct proof when describing ``integration'' as the left adjoint
+functor to the tautological ``inverse image'' functor, is more or less
+tautological, too. The reason for this awkwardness is again that,
+rather than being content to work with the models as they are,
+Thomason refers to the
+Bousfield-Kan\scrcomment{\textcite{BousfieldKan1972}} description of
+colimits in the semisimplicial set-up which he takes as his definition
+for colimits. I suspect that \Cat{} is the one modelizer most ideally
+suited for expressing the ``integration'' operation, and that the
+Bousfield-Kan description is just the obvious, not-quite-as-simple one
+which can be deduced\pspage{567} from the former, using the relevant
+two functors between \Cat{} and \Simplexhat{} which allow to pass from
+one type of models to another. (Sooner or later I should check in
+Bousfield-Kan's book whether this is so or not\dots)\enspace Thomason,
+however, did the opposite, and it is quite natural that he had to pay
+for it by a fair amount of sweat! (Reference of the paper: Homotopy
+colimits in the category of small categories, Math.\ Proc.\ Cambridge
+Philos.\ Soc.\ (1979), 85, p.~91--109.)
+
+The proof written down yesterday for compatibility of abelianization
+of homotopy types with the Whitehead abelianization functor within a
+category \Ahat, still goes through when replacing abelianization by
+$k$-linearization, with respect to an arbitrary ground ring $k$ (not
+even commutative). It wasn't really worth while, though, to introduce
+a ring $k$, as the general result should follow at once from the case
+$k=\bZ$, by the formula
+\begin{equation}
+  \label{eq:136.1}
+  \mathrm Lp_!^k(k_A) \simeq \mathrm Lp_!^\bZ(\bZ_A) \Lotimes_\bZ
+  k,\tag{1} 
+\end{equation}
+where in the left-hand side we are taking the left derived functor for
+the functor
+\[p_!^k : A\uphat_k \to (\AbOf_k)\]
+generalizing $p_!\supab = p_!^\bZ$ (with $p: A\to e$ as above), and
+where in the right-hand side we are using the ring extension functor
+\[\Lotimes_\bZ : \D_\bullet\Ab\to\D_\bullet(\AbOf_k)\]
+for the relevant derived categories. This reminds me of the need of
+developing a more or less exhaustive formulaire around the basic
+operations
+\begin{equation}
+  \label{eq:136.2}
+  \mathrm Lf_!, \quad f^*, \quad \mathrm Rf_*,\tag{2}
+\end{equation}
+including the familiar one for the two latter, valid more generally
+for maps between ringed topoi, and including also a ``\emph{projection
+  formula}'' generalizing \eqref{eq:136.1}. Such a formula will be no
+surprise, surely, to a reader familiar with a duality context (such as
+étale cohomology, or ``coherent'' cohomology of noetherian schemes,
+say), where a formalism of the ``four variances'' $f_!$, $f^*$, $f_*$,
+$f^!$ and the ``two internal operations'' $\Lotimes$ and $\RbHom$ can
+be developed -- it would seem that the formal properties of the triple
+\eqref{eq:136.2}, together with the two internal operations just
+referred to, are very close (for the least) to those of the slightly
+richer one in duality set-ups, including equally an ``unusual inverse
+image'' $f^!$, right adjoint to $\mathrm Rf_*$ (denoted sometimes
+simply by $f_*$). This similarity\pspage{568} is a matter of course,
+as far as the two last among the functors \eqref{eq:136.2}, together
+with the two internal operations, are concerned, as in both contexts
+(homology and cohomology formalism within \Cat{} on the one hand, and
+the ``sweeping duality formalism'' on the other) the formulaire
+concerning these four operations
+\[f^*, \quad \mathrm Rf_*, \quad {\Lotimes}, \quad \RbHom\]
+is no more, no less than just the relevant formulaire in the context
+of arbitrary (commutatively) ringed topoi, and maps between such. The
+common notation $f_!$ (occurring in $\mathrm Lf_!$ in the \Cat{}
+context, in $\mathrm Rf_!$ in the ``duality'' context) is a very
+suggestive one, for the least, and I am rather confident that most
+reflexes (concerning formal behavior of $f_!$ with respect to the
+other operations) coming from one context, should be OK too in the
+other. Whether this is just a mere formal analogy, or whether there is
+a deeper relationship between the two kinds of contexts, I am at a
+loss at present to say. It doesn't seem at all unlikely to me that
+among arbitrary maps in \Cat, one can single out some, by some kind of
+``finite type'' condition, for which a functor
+\begin{equation}
+  \label{eq:136.star}
+  f^! : \D^+(B\uphat_k) \to \D^+(A\uphat_k)\tag{*}
+\end{equation}
+can be defined (where $f:A\to B$), right adjoint to the familiar
+$\mathrm Rf_*$ functor, so that \eqref{eq:136.2} can be completed to a
+sequence of \emph{four} functors
+\begin{equation}
+  \label{eq:136.3}
+  \mathrm Lf_!, \quad f^*, \quad \mathrm Rf_*, \quad f^!,\tag{3}
+\end{equation}
+forming a sequence of mutually adjoint functors between derived
+categories, in the usual sense (the functor immediately to the right
+of another being its right adjoint). I faintly remember that Verdier
+worked out such a formalism within the context of discrete or
+profinite groups, or both, in a Bourbaki talk he gave, this being
+inspired by the similar work he did within the context of usual
+topological spaces. In the latter, the finiteness condition required
+for a map
+\[f:X\to Y\]
+of topological spaces to give rise to a functor $f^!$ (between, say,
+the derived categories of the categories of abelian sheaves on $Y$ and
+$X$) is mainly that $X$ should be locally embeddable in a product
+$Y\times \bR^d$ -- a rather natural condition indeed! As we are using
+\Cat{} as a kind of algebraic paradigm for the category of topological
+spaces, this last example for ``sweeping duality'' makes it rather
+plausible that something of the same kind should exist indeed in
+\Cat{} -- and likewise for the context of groups (which we may view as
+just particular cases of\pspage{569} models in \Cat).
+
+I am sorry I was a bit confused, when describing $f^!$ as a right
+adjoint to $\mathrm Rf_*$ -- I was thinking of the analogy with a map
+of schemes, or spaces, which is not only ``of finite type'' in a
+suitable sense, but moreover \emph{proper} -- in which case, in those
+duality contexts, $\mathrm Rf_*$ is canonically isomorphic with the
+functor denoted by $f_!$ or $\mathrm Rf_!$. Otherwise, the
+(``non-trivial'') ``duality theorem'' will assert, rather, that the
+pair
+\[\mathrm Rf_!,\quad f^!\]
+is a pair of adjoint functors, just as is the pair
+\[f^*,\quad \mathrm Rf_*\quad\text{(or simply $f_*$).}\]
+But even when $f$ is assumed to be proper, the sequence
+\eqref{eq:136.3} isn't a sequence of adjoint functors in the standard
+duality contexts, namely $\mathrm Rf_!$ is by no means left adjoint to
+$f^*$, i.e., $f^*$ isn't isomorphic to $f^!$ (except in extremely
+special cases, practically I would think only étale maps are OK, which
+in the context of \Cat{} would correspond to maps in \Cat{} isomorphic
+to a map $A_{/X}\to A$ for $X$ in \Ahat, namely maps which are
+fibering with discrete fibers). This \emph{does} make an important
+discrepancy indeed, between the two kinds of contexts -- and increases
+my perplexity, as to whether or not one should expect a ``four
+variance duality formalism'' to make sense in \Cat. If so, presumably
+the $f_!$ or $\mathrm Rf_!$ it will involve (perhaps via a suitable
+notion of ``proper'' maps in \Cat, as already referred to earlier
+(section~\ref{sec:70})) will be different after all from the $\mathrm
+Lf_!$ we have been working with lately, embodying homology
+properties. But so does $\mathrm Rf_!$ too, in a rather strong sense,
+via the ``duality theorem''!
+
+In the various duality contexts, a basic part is played by the three
+particular classes of maps: proper maps, smooth maps, and immersions,
+and factorizations of maps into an immersion followed by either a
+proper, or a smooth map. In the context of Cat, there is a very
+natural way indeed to define the three classes of maps, as we'll see
+in the next chapter, presumably -- so natural indeed, that it is hard
+to believe that there may be any other reasonable choice! One very
+striking feature (already mentioned in section~\ref{sec:70}) is that
+the two first notions are ``dual'' to each other in the rather
+tautological sense, namely that a map $f:A\to B$ in \Cat{} is proper
+if{f} the corresponding map $f\op:A\op\to B\op$ is smooth (whereas the
+notion of an immersion is\pspage{570} autodual). How does this fit
+with the expectation of developing a ``four variance'' duality
+formalism within \Cat? It rather heightens perplexity at first sight!
+Proper maps include cofibrations (in the sense of category theory, not
+in Kan-Quillen's sense!); dually, smooth maps include
+fibrations. Consequently, maps which are moth smooth and proper
+include bifibrations, and hence are not too uncommon. Now, how strong
+a restriction is it for a map $f:A\to B$ in \Cat{} to factor into
+\[f=p\circ i,\]
+where $i$ is an immersion $A\to A'$ (namely, a functor identifying $A$
+to a full subcategory of $A'$, whose essential image includes, with
+any two objects $x,y$, any other $z$ which is ``in between'': $x\to
+z\to y$), and $p$ is both proper and smooth (a bifibration, say)?
+
+I start feeling like a battle horse scenting gunpowder again -- still,
+I don't think I'll run into it. Surely, there is something to be
+cleared up, and perhaps once again a beautiful duality formalism with
+the six operations and all will emerge out of darkness -- but this
+time I will not do the pulling. Maybe someone else will -- if he isn't
+discouraged beforehand, because the big-shots all seem kind of blasé
+with ``big duality'', derived categories and all that. As for my
+present understanding, I feel that the question isn't really about
+homotopy models, or about foundations of homotopy and cohomology
+formalism -- at any rate, that I definitely don't need this kind of
+stuff, for the program I have been out for. I shouldn't refrain, of
+course, to pause on the way every now and then and have a look at the
+landscape, however remote or misty -- but I am not going to forget I
+am bound for a journey, and that the journey should not be an unending
+one\dots
+
+\bigbreak
+
+\noindent\hfill\alsoondate{27.10.}\par
+
+% 137
+\hangsection[Looking for the relevant notions of properness and
+\dots]{Looking for the relevant notions of properness and smoothness
+  for maps in \texorpdfstring{\Cat}{(Cat)}. Case of ordered sets as a
+  paradigm for cohomology theory of conically stratified
+  spaces.}\label{sec:137}%
+It occurred to me that I have been a little rash yesterday, when
+asserting that the notions of ``smoothness'' and ``properness'' for
+maps in \Cat{} which I hit upon last Spring is the only ``reasonable''
+one. Initially, I referred to these notions by the names
+``cohomologically smooth'', ``cohomologically proper'', as a measure
+of caution -- they were defined by properties of commutation of base
+change to formation of the Leray sheaves $\mathrm R^if_*$ (i.e.,
+essentially, to ``cointegration''), which were familiar to me for
+smooth resp.\ proper maps in the context of schemes, or ordinary
+topological spaces. These\pspage{571} cohomological counterparts of
+smoothness and properness fit very neatly into the homology and
+cohomology formalism, and I played around enough with them, last
+Spring as well as more than twenty years ago when developing étale
+cohomology of schemes, for there being no doubt left in my mind that
+these notions are relevant indeed. However, I was rather rash
+yesterday, while forgetting that these cohomological versions of
+smoothness and properness are considerably weaker than the usual
+notions. Thus, in the context of schemes over a ground field, the
+product of any two schemes is cohomologically smooth over its factors
+-- or equivalently, any scheme over a field $k$ is cohomologically
+smooth over $k$! Similarly, in the context of \Cat, any object in
+\Cat, namely any small category, is both cohomologically smooth and
+proper over the final object $e$ (as it is trivially ``bifibered''
+over $e$). On the other hand, it isn't reasonable, of course, to
+expect any kind of Poincaré-like duality to hold for the cohomology
+(with twisted coefficients, say) of an arbitrary object $A$ in
+\Cat. To be more specific, it is easy to see that in many cases, the
+functor
+\[\mathrm Rf_* : \D^+(\Ahatab)\to\D^+\Ab\]
+does not admit a right adjoint (which we would call $f^!$). For
+instance, when $A$ is discrete, then $f^!$ exists (and may then be
+identified with $f^*$) if{f} $A$ is moreover \emph{finite} -- a rather
+natural condition indeed, when we keep in mind the topological
+significance of the usual notion of properness! This immediately
+brings to mind some further properties besides base change properties,
+which go with the intuitions around properness -- for instance, we
+would expect for proper $f$, the functors $f_*$ and $\mathrm Rf_*$ to
+commute to filtering direct limits, and the same expectation goes with
+the assumption that $\mathrm Rf_*$ should admit a right adjoint. This
+exactness property is not satisfied, of course, when $A$ is discrete
+infinite. We now may think (still in case of target category equal to
+$e$) to impose the drastic condition that the category $A$ is
+finite. Such restriction however looks in some respects too weak, in
+others too strong. Thus, it will include categories defined by finite
+groups, which goes against the rather natural expectation that
+properness + smoothness, or any kind of Poincaré duality, should go
+with \emph{finite cohomological dimension}. On the other hand, there
+are beautiful infinite groups (such as the fundamental group of a
+compact surface, or of any other compact variety that is a $K(\pi,1)$
+space\dots) which satisfy Poincaré duality.
+
+These\pspage{572} reflections make it quite clear that the notions of
+properness and of smoothness for maps in \Cat, relevant for a duality
+formalism, have still to be worked out. Two basic requirements to be
+kept in mind are the following: \namedlabel{rem:137.1}{1)}\enspace for
+a proper map $f: A\to B$, and any ring of coefficients $k$, the
+functor
+\[\mathrm Rf_* : \D^+(A\uphat_k)\to\D^+(B\uphat_k)\]
+should admit a right adjoint $f^!$, and
+\namedlabel{rem:137.2}{2)}\enspace for a smooth map $f$ factored as
+$f=g\circ i$, with $g$ proper and $i$ an ``open immersion'', the
+composition $f^!\eqdef i^*\circ g^!$ should be expressible as
+\begin{equation}
+  \label{eq:137.5}
+  f^!: K^\bullet \mapsto f^*(K)\Lotimes_k T_f(k)[d_f],\tag{5}
+\end{equation}
+where $T_f(k)$ is a presheaf of $k$-modules on $A$ locally isomorphic
+to the constant presheaf $k_A$ ($T_f(k)$ may be called the
+\emph{orientation sheaf} for $f$, with coefficients in $k$), and $d_f$
+is a natural integer (which may be called the \emph{relative
+  dimension} of $A$ over $B$, or of $f$). (For simplicity, I assume in
+\ref{rem:137.2} that $A$ is connected, otherwise $d_f$ should be
+viewed as a function on the set of connected components of
+$A$.)\enspace This again should give the correct relationship, for $f$
+as above, between the (for the time being hypothetical) $\mathrm Rf_!$
+($\eqdef \mathrm Rg_*\circ\mathrm Lf_!$) and our anodyne $\mathrm
+Lf_!$, for an argument $L_\bullet$ in $\D^\bullet(A\uphat_k)$ say:
+\begin{equation}
+  \label{eq:137.6}
+  \mathrm Rf_!(L_\bullet) \simeq \mathrm Lf_!(L_\bullet \otimes
+  T_f^{-1})[-d_f],\tag{6} 
+\end{equation}
+where the left-hand side is just $\mathrm Rf_*(L_\bullet)$, if we
+assume moreover $f$ to be proper.
+
+This precise relationship between the two possible versions of an
+$f_!$ operation between derived categories, namely $\mathrm Lf_!$
+embodying homology, defined for any map $f$ in \Cat, and
+$\mathrm Rf_!$ embodying ``cohomology with proper supports'', defined
+for a map that may be factored as $g\circ i$ with $g$ ``proper'' and
+$i$ an (open, if we like) immersion, relation valid if $f$ is moreover
+assumed to be ``smooth'', greatly relaxes yesterday's perplexity,
+coming from a partial confusion in my mind between the operations
+$\mathrm Rf_!$ and $\mathrm Lf_!$. (Beware the notation $\mathrm Rf_!$
+is an abuse, as it doesn't mean at all anything like the right derived
+functor of the functor $f_!$!)\enspace At the same time, I feel a lot
+less dubious now about the existence of a ``six operations'' duality
+formalism in the \Cat{} context -- I am pretty much convinced, now,
+that such a formalism exists indeed. The main specific work ahead is
+to get hold of the relevant notions of proper and smooth maps. The
+demands we have on\pspage{573} these, besides the relevant base change
+properties, are so precise, one feels, that they may almost be taken
+as a definition! Maybe even the ``almost'' could be dropped -- namely
+that a comprehensive axiomatic set-up for the duality formalism could
+be worked out, in a way applicable to the known instances as well as
+to the presently still unknown one of \Cat, by going a little further
+still than Deligne's exposition in
+SGA~5\scrcomment{\textcite[Dualité]{SGA4andhalf}} (where the notions
+of ``smooth'' and ``proper'' maps were supposed to be given
+beforehand, satisfying suitable properties). Before diving into such
+axiomatization game, one should get a better feeling, though, through
+a fair number of examples (not all with $e$ as the target category
+moreover), of how the proper, the smooth and the proper-and-smooth
+maps in \Cat{} actually look like. Here, presumably, Verdier's work in
+the context of discrete infinite groups should give useful clues.
+
+Other important clues should come from the opposite side so to say --
+namely ordered sets. Such a set $I$, besides defining in the usual way
+a small category and hence a topos, may equally be viewed as a
+topological space, more accurately, the topos it defines may be viewed
+as being associated to a topological space, admitting $I$ as its
+underlying set (cf.\ section~\ref{sec:22}, p.~\ref{p:18}). This
+topological space is noetherian if{f} the ordered set $I$ is -- for
+instance if $I$ is finite. In such a case, an old algebraic geometer
+like me will feel in known territory, which maybe is a delusion,
+however -- at any rate, I doubt the duality formalism for topological
+spaces (using factorizations of maps $X\to Y$ via embeddings in spaces
+$Y\times\bR^d$) makes much sense for such non-separated
+spaces. However, as we saw in section~\ref{sec:22}, when $I$ satisfies
+some mild ``local finiteness'' requirement (for instance when $I$ is
+finite), we may associate to it a \emph{geometrical realization} $\abs
+I$, which is a locally compact space (a compact one indeed if $I$ is
+finite) endowed with a ``conical subdivision'' (index by the opposite
+ordered set $I\op$), hence canonically triangulated via the
+``barycentric subdivision''. The homotopy type of this space is
+canonically isomorphic to the homotopy type of $I$, viewed as a
+``model'' in \Cat. What is more important here, is that a (pre)sheaf
+of sets (say) on the category $I$ may be interpreted as being
+essentially the same as a sheaf of sets on the geometric realization
+$\abs I$ \emph{which is locally constant} (\emph{and hence constant})
+\emph{on each of the \emph{``open''} strata or ``cones'' of $I$}. This
+description then carries over to sheaves of $k$-modules. The ``clue''
+I had in mind is that \emph{within the context of locally finite
+  ordered sets, the looked-for ``six operations duality formalism''
+  should be no more, no less than the accurate reflection of the same
+  formalism within the context\pspage{574} of \textup(locally
+  compact\textup) topological spaces}, as worked out by Verdier in or
+of his Bourbaki talks -- it being understood that when applying the
+latter formalism to spaces endowed with conical stratifications, maps
+between these which are compatible with the stratifications (in a
+suitable sense which should still be pinned down), and to sheaves of
+modules which are compatible with the stratifications in the sense
+above, these will give rise (via the ``six operations'') to sheaves
+satisfying the same compatibility. (NB\enspace when speaking of
+``sheaves'', I really mean complexes of sheaves $K^\bullet$, and the
+compatibility condition should be understood as a condition for the
+ordinary sheaves of modules $\mathrm H^i(K^\bullet)$.)\enspace This
+remark should allow to work out quite explicitly, in purely algebraic
+(or ``combinatorial'') terms, the ``six operations'' in the context of
+locally finite ordered sets, at any rate.
+
+This interpretation suggests that an ordered set $I$ should be viewed
+as a ``proper'' object of \Cat{} if{f} $I$ is finite. In the same
+vein, whenever $I$ is ``locally proper'', namely locally finite, and
+moreover its topological realization $\abs I$ is a ``smooth''
+topological space in the usual sense, namely is a topological
+\emph{variety} (for which it is enough that for every $x$ in $I$, the
+topological realization
+\begin{equation}
+  \label{eq:137.7}
+  \abs{I_{>x}}\tag{7}
+\end{equation}
+of the set of elements $y$ such that $y>x$ should be a sphere), we
+would consider $I$ as a ``smooth'' object in \Cat. If $A$ is any
+object in \Cat{} and $I$ is an ordered set which is finite resp.\
+``smooth'' in the sense above, we will surely expect $A\times I\to A$
+to be ``proper'' resp.\ ``smooth'' for the duality formalism we wish
+to develop in \Cat.
+
+It should be kept in mind that for the algebraic interpretation above
+to hold, for sheaves on a conically stratified space $\abs I$ in terms
+of an ordered set $I$, we had to take on the indexing set $I$ for the
+strata the order relation \emph{opposite} to the inclusion relation
+between (closed) strata -- otherwise, the correct interpretation of
+sheaves constant on the open strata is via \emph{covariant} functors
+$I\to\Sets$, i.e., \emph{presheaves on $I\op$} (not $I$). At any rate,
+as there is a canonical homeomorphism
+\begin{equation}
+  \label{eq:137.8}
+  \abs I\simeq\abs{I\op}\tag{8}
+\end{equation}
+respecting the canonical barycentric subdivisions of both sides,
+notions for $I$ (such as properness, or smoothness) which are
+expressed as intrinsic properties of the corresponding topological
+space $\abs I$ (independently of its subdivision) are autodual -- they
+hold for $I$ if{f} they do for $I\op$.\pspage{575} This is in sharp
+contrast with the more naive notions of ``cohomological'' properness
+and smoothness via base change operations, which are interchanged by
+duality (which was part of yesterday's perplexities, now straightening
+out\dots).
+
+I feel I should be a little more outspoken about the relevant notion
+of ``proper maps'' between ordered sets, which should be the algebraic
+expression of the geometric notion alluded to above, of a map between
+conically stratified spaces being ``compatible with the conical
+stratifications''. In order for the corresponding direct image functor
+for sheaves to take sheaves compatible with the stratification above
+to sheaves of same type below, we'll have to insist that the image by
+$f$ of a strata above should be a whole strata below. Now, it is clear
+that any map
+\begin{equation}
+  \label{eq:137.9}
+  f:I\to J\tag{9}
+\end{equation}
+between ordered sets takes flags into flags, and hence induces a map
+\begin{equation}
+  \label{eq:137.10}
+  \abs f:\abs I \to \abs J\tag{10}
+\end{equation}
+between the geometric realizations, compatible with the barycentric
+triangulations and thus taking simplices into simplices. But even when
+$I$ and $J$ are finite (hence ``proper''), the latter map does not
+always satisfy the condition above. Thus, when $I$ is reduced to just
+one point, hence \eqref{eq:137.9} is defined by the image $j\in J$ of
+the latter, the corresponding map \eqref{eq:137.10} maps the unique
+point of $\abs I$ to the barycenter of the stratum $C_j$ in $\abs J$,
+which is a stratum of $\abs J$ if{f} $C_j$ is a minimal stratum, i.e.,
+$j$ is a \emph{maximal} element in $J$. A natural algebraic condition
+to impose upon $f$, in order to ensure that $\abs f$ satisfy the
+simple geometric condition above, is that for any $x$ in $I$, and any
+$y'$ in $J$ such that
+\[y'>y \eqdef f(x),\]
+there should exist an $x'$ in $I$ satisfying
+\begin{equation}
+  \label{eq:137.11}
+  x'>x \quad\text{and}\quad f(x')=y'.\tag{11}
+\end{equation}
+This condition strongly reminds us of the valuative criterion for
+properness in the context of schemes, where the relation $y'\ge y$ or
+$y\to y'$, say, should be interpreted as meaning that $y'$ is a
+\emph{specialization} of $y$. However, in the valuative criterion for
+properness (for a map of preschemes of finite type over a noetherian
+prescheme say), if one wants actual properness\pspage{576} indeed
+(including separation of $f$, not just that $f$ is universally
+closed), one has to insist that the $x'$ above should be unique: every
+specialization $y'$ of $y=f(x)$ lifts to a \emph{unique}
+specialization $x'$ of $x$. If we applied this literally in the
+present context, this would translate into the condition that $\abs f$
+should map \emph{injectively} each closed stratum $C_x$ of $\abs I$ --
+which would exclude such basic maps as the projection $I\to e$ to just
+one point!
+
+One may wonder why trouble about the analogy with algebraic geometry
+and any extra condition on $f$ besides the one we got. The point,
+however, is that we would like the map
+\begin{equation}
+  \label{eq:137.12}
+  C_x=\abs{I_{\ge x}} \to C_y=\abs{I_{\ge y}}\tag{12}
+\end{equation}
+between corresponding strata induced by $\abs f$ to be
+``cohomologically trivial'' in a suitable sense, not only surjective
+-- in analogy,\footnote{analogy: aspheric fibers! \scrcommentinline{I
+    \emph{think} that's what the footnote says; it's hard to
+    read\dots}} say, with the usual notion of maps between
+triangulated spaces; if we don't have some condition of this type, we
+will have no control over the structure of the direct image and the
+higher direct images $\mathrm R^i\abs f_*$ of an ``admissible'' sheaf
+upstairs. I didn't really analyze the situation carefully, in terms of
+what we are after here in the context of those stratified geometric
+realizations. I feel pretty sure, though, that there the general
+notion of ``cohomological properness'' which I worked out last Spring
+fits in just right, to give the correct answer. The criterion I
+obtained (necessary and sufficient for the relevant compatibility
+property of $\mathrm R^if_*$ with arbitrary base change $J'\to J$ in
+\Cat) reads as follows: let
+\begin{equation}
+  \label{eq:137.13}
+  I(f,x,x') =\set{x'\in I}{\text{$x'>x$ and $f(x')=y'$}}\tag{13}
+\end{equation}
+be the subset of $I$ satisfying the conditions \eqref{eq:137.11}
+above. Instead of demanding only that this set be non-empty, or going
+as far as demanding that it should be reduced to just one point, we'll
+demand that this set should be \emph{aspheric}. (When we are concerned
+with cohomology with commutative coefficients only, presumably it
+should be enough to demand only that this set be \emph{acyclic} --
+which should be enough for the sake of a mere duality
+formalism\dots)\enspace In more geometric terms, this should mean, I
+guess, that the inverse image, by the map \eqref{eq:137.12} above
+between closed strata, of any closed stratum below, should be
+aspheric. I doubt this condition holds under the mere assumption that
+the sets \eqref{eq:137.13} be non-empty, i.e., \eqref{eq:137.12} be
+surjective -- I didn't sit down, though, to try and make an example.
+
+Thus,\pspage{577} we see that when working with the notion of
+properness of maps, even for such simple gadgets as finite ordered
+sets, which should be viewed as ``proper'' (or ``compact'') objects by
+themselves, this notion is far from being a wholly trivial one -- for
+instance, it does not hold true that any map between such ``proper''
+objects is again ``proper''. This now seems to me just a mathematical
+``fact of life'', which we may not disregard when working with finite
+ordered sets, say, in view of expressing in algebraic terms some
+standard operations in the cohomology theory of sheaves on topological
+spaces, endowed with suitable conical stratifications. The fault,
+surely, is not with the notion of conical stratification itself, which
+may be felt by some as being ad hoc, awkward and what not. I know the
+notion is just right -- but at any rate, even when working with strata
+which are perfect topological cells (so that nobody could possibly
+object to them), exactly the same facts of life are there -- not every
+map between such cellular decompositions, mapping cells \emph{onto}
+cells, will fit into a ``combinatorial'' description when it comes to
+describing the standard operations of the cohomology of sheaves, for
+sheaves compatible with the stratifications\dots
+
+To sum up, it seems to me that definitely, there is a very rich
+experimental material available already at present, in order to come
+to a feeling of what duality is like in the context of \Cat, and for
+developing some of the basic intuitions needed for working out,
+hopefully, ``the'' full-fledged duality theory which should hold in
+\Cat. Before leaving this question, I would like to point out still
+one other property connected with the intuitions around ``properness''
+-- more generally, around maps ``of finite type'' in a suitable sense,
+which sometimes may translate into: factorizable as a composition
+$f=g\circ i$, with $g$ proper and $i$ an immersion. This is about
+stability of ``constructibility'' or ``finiteness'' conditions for
+(complexes of) sheaves of $k$-modules, with respect to the standard
+operations $\mathrm Rf_*$, $\mathrm Rf_!$, $f^!$ (stability by $f^*$
+being a tautology in any case). Such stability of course, whenever it
+holds, is an important feature, for instance for making ``virtual''
+calculations in suitable ``Grothendieck groups'' (where Euler-Poincaré
+type invariants may be defined). It should be recalled, however, that
+the six fundamental operations in the duality formulaire, as well as
+nearly all of the formulaire itself, make sense (and formulæ hold
+true) without any finiteness conditions on the complexes of sheaves we
+work with, except just boundedness conditions on the degrees of those
+complexes.
+
+\begin{remarks}
+  1)\enspace One\pspage{578} of the (rather few) instances in the
+  duality formulaire where finiteness conditions are clearly needed,
+  is the so-called ``biduality theorem'', when taking $\RbHom$'s with
+  values in a so-called ``dualizing complex'', which here should be an
+  object
+  \[R^\bullet\quad\text{in $\D^{\mathrm b}(A\uphat_k)$}\]
+  (for given $A$ in \Cat{} and given ring of coefficients $k$, for
+  instance $k=\bZ$). The question arises here, for any given $A$ and
+  $k$, a)\enspace whether there exists a dualizing complex $R^\bullet$
+  (which, as usual, will be unique up to dimension shift and ``twist''
+  by an invertible sheaf of $k$-modules on $A$), and b)\enspace can
+  such dualizing complex be obtained as
+  \[R^\bullet=p^!(k_e),\]
+  where $p:A\to e$ is the projection to the final object of \Cat? It
+  should be easy enough, once the basic duality formalism is written
+  down for ordered sets, as contemplated above, to show that when $A$
+  is a finite ordered set (or only locally finite of finite
+  combinatorial dimension), then $p^!(e_k)$ is indeed a dualizing
+  complex. To refer to something more ``en vogue'' at present than
+  those poor dualizing complexes, it is clear, from what I heard from
+  Illusie and Mebkhout about the ``complexe d'intersection'' for
+  stratified spaces, that this complex can be described also in the
+  context of locally finite ordered sets (if I got the stepwise
+  construction of this complex right). As the construction here
+  corresponds to stratifications where the strata are by no means
+  even-dimensional, I am not too sure, though, if the complex obtained
+  this way is really relevant -- it isn't a topological invariant of
+  the topological space at any rate, independently of its
+  stratification -- a bad point indeed. Too bad!
+
+  2)\enspace Here is a rather evident example showing that the
+  asphericity condition on \eqref{eq:137.13} is not automatic. Take
+  $I$ with a smallest element $x$ (hence $C_x=\abs I$), and
+  $J=\Simplex_1=(0\to 1)$. To give a map $I\to J$ amount to give
+  $I_0=f^{-1}(0)\subset I$, which is any open subset of $I$ (i.e.,
+  such that $a\in I_0$, $b\le a$ implies $b\in I_0$). If we take
+  $I_0=\{x\}$, then properness of $f$ is equivalent with
+  $I_1=I\setminus I_0=I\setminus\{x\}$ being aspheric, while the
+  weaker condition contemplated first (the sets \eqref{eq:137.13}
+  non-empty) means only that $I_1\ne\emptyset$. Now, $I_1$ may of
+  course be taken to be any (finite say) ordered set -- the
+  construction made amounting to taking the cone over the map
+  $\abs{I_1}\to e$. In this examples, all fibers of $\abs f:\abs I\to
+  \abs J$ are (canonically) homeomorphic to $I_1$, except the fiber at
+  the ``barycenter'' $1$, which\pspage{579} is reduced to a point --
+  visibly not a very ``cellular'' behavior when $\abs{I_1}$ isn't
+  aspheric! At any rate, as the sheaves $\mathrm R^i\abs f_*(F)$ (for
+  $F$ a constant sheaf above, say) may be computed fiberwise, we see
+  that if $I_1$ isn't aspheric, these sheaves (which are constant on
+  $\abs J\setminus\{1\}$) are \emph{not} going to be constant on $\abs
+  J\setminus\{0\}$, as they should if we want an algebraic paradigm of
+  operations like $\mathrm R\abs f_*$ in terms of sheaves on finite
+  ordered sets.
+
+  In this example we could take $\abs I$ to be a perfect $n$-cell
+  ($n\ge1$), hence $I_1$ is an $(n-1)$-sphere, whereas $\abs J$ isn't
+  really a (combinatorial) $1$-cell, as its boundary has just
+  \emph{one} point $0$, instead of two. The $1$-cell structure
+  corresponds to the ordered set (\emph{opposite} to the ordered set
+  formed by the two endpoints and the dimension $1$ stratum)
+  \[J =
+    \begin{tikzcd}[row sep=tiny,column sep=small,cramped]
+      & y\ar[dl]\ar[dr] & \\
+      0 & & 1
+    \end{tikzcd}.\]
+  For any ordered set $I$, to give a map $f:I\to J$ amounts to giving
+  the two subsets
+  \[I_0=f^{-1}(0), \quad I_1=f^{-1}(1),\]
+  subject to the only condition of being open and disjoint. In terms
+  of strata of $\abs I$, this means that we give two sets $I_0,I_1$ of
+  strata, containing with any stratum any smaller one, and having no
+  stratum in common. The condition that the sets \eqref{eq:137.13}
+  should be non-empty says that any point in $I$ which is neither in
+  $I_0$ nor $I_1$ admits majorants in both -- or geometrically, any
+  stratum which isn't in $I_0$ nor in $I_1$ meets both $\abs{I_0}$ and
+  $\abs{I_1}$, i.e., contains strata which are in $I_0$ and strata
+  which are in $I_1$. Even when $\abs I$ is a combinatorial $2$-cell,
+  i.e., a polygonal disc, this condition does not imply asphericity of
+  the sets \eqref{eq:137.13} (not even $0$-connectedness). To see
+  this, we take the set \eqref{eq:137.13} where $x$ is the dimension
+  $2$ stratum, i.e., the smallest element of $I$, mapped to $y$ (the
+  smallest in $J$), and $y'$ either $0$ or $1$. The reader will easily
+  figure out on a drawing the structure of the map $\abs f$, as I just
+  did myself: the fibers at the endpoints of the segment $\abs J$ are,
+  as given, discrete with cardinal $m$, the fiber at a point different
+  from the endpoints and from their barycenter are disjoint sums of
+  $m$ segments (hence homotopic to the former fibers), whereas the
+  fiber at the barycenter is the union of $m$ segments meeting in
+  their\pspage{580} common middle, hence is contractible. Thus, the
+  $\mathrm R^0\abs f_*$ of a constant sheaf on the disc $\abs I$ is by
+  no means constant on the open, dimension one stratum of $\abs J$.
+
+  These examples bring to my mind that for any map $f:I\to J$ between
+  finite ordered sets, possibly submitted to the mild restriction that
+  the sets \eqref{eq:137.13} should be non-empty, the homotopy types
+  of those ordered sets \eqref{eq:137.13} (for the order relation
+  induced by $I$) should be exactly the homotopy types of the fibers
+  of the maps \eqref{eq:137.12} between strata. Thus, asphericity of
+  these ordered sets should express no more, no less than the
+  contractibility of those fibers. This latter condition is exactly
+  what is needed in order to ensure stability by $\mathrm R\abs f_*$
+  of the notion of complexes of sheaves compatible with the
+  stratifications. 
+\end{remarks}
+
+\bigbreak
+
+\noindent\hfill\ondate{28.10.}\par
+
+% 138
+\hangsection[Niceties and oddities: $\mathrm Rf_!$ commutes to
+\dots]{Niceties and oddities: \texorpdfstring{$\mathrm Rf_!$}{Rf!}
+  commutes to colocalization, not localization.}\label{sec:138}%
+Yesterday and the day before, I got involved in that unforeseen
+digression around the foreboding of a ``six operations duality
+formalism'' in \Cat, and suitable notions for smoothness and (more
+important still) of properness for a map in \Cat. This digression
+wholly convinced me that the usual duality formalism should hold in
+\Cat{} too. Working this out in full detail should be a most pleasant
+task indeed, and presumably the best, or even the only way for gaining
+complete mastery of the cohomology formalism within \Cat{} or, what
+more or less amounts to the same, for topoi which admit sufficiently
+many projective objects. In the previous two sections, I referred to
+such duality formalism as one concerned with sheaves of $k$-modules,
+for any fixed ring $k$ -- but from the example of étale duality for
+schemes, say, it is likely that instead of fixing a ring $k$, we may
+as well take objects $A$ in \Cat{} endowed with an arbitrary sheaf of
+rings $\scrO_A$ (which we'll only have to suppose commutative when
+concerned with the two internal operations $\Lotimes$ and $\RbHom$),
+and taking maps of such ringed objects as the basic maps. In the
+present context, the usual ``six operations'' in duality theory will
+be enriched, however, by still another one, namely $\mathrm Lf_!$,
+defined for any map $f$ between such ringed objects (not to be
+confused with the $\mathrm Rf_!$ operation, defined only under
+suitable finiteness assumptions, such as ``properness'', for the
+underlying map in \Cat), whose relationship to the other operations
+should be understood and added to the standard duality
+formulaire. One\pspage{581} such formula, namely the precise relation
+between $\mathrm Lf_!$ and $\mathrm Rf_!$ for a smooth $f$, was given
+yesterday (p.~\ref{p:572} \eqref{eq:137.6}).
+
+The day before, I was out for trying to get a better understanding of
+the $\mathrm Rf_!$ operation (including the case of non-constant
+sheaves of rings for the modules we work with). This operation still
+remains unfamiliar to me, very unlike my old friend $\mathrm Rf_*$ --
+there is a number of things about it which are not quite clear yet in
+my mind, even when just taking the functor $f_!$ between modules,
+before taking a left derived functor. For instance, for general rings
+of operators $\scrO_A$ and $\scrO_B$, when $f$ is a ringed map
+\begin{equation}
+  \label{eq:138.1}
+  f: (A,\scrO_A) \to (B,\scrO_B),\tag{1}
+\end{equation}
+it doesn't seem that formation of $f_!$ commutes to restriction of
+rings of operators (to the constant rings $\bZ_A$ and $\bZ_B$, say),
+namely that for a given $\scrO_A$-module $F$, $f_!(F)$ may be
+interpreted as just ${f_0}_!\supab(F)$ with suitable operations of
+$\scrO_B$ on the latter, where
+\begin{equation}
+  \label{eq:138.2}
+  f_0:A\to B\tag{2}
+\end{equation}
+is the map in \Cat{} underlying $f$. When reducing to a suitable
+``universal'' case, this may be expressed by saying that for given map
+$f_0$ and given abelian sheaf $F$ on $A$, if we define
+\[\scrO_A = \bEnd_\bZ(F), \quad \scrO_B=f_*(\scrO_A),\]
+there doesn't seem to be a natural operation of $\scrO_B$ upon
+${f_0}_!\supab(F)$; all we can say, it seems, is that the ring of
+global sections of $\scrO_B$ operates on ${f_0}_!\supab(F)$. More
+generally, reverting to the general case of a map $f$ of ringed
+objects in \Cat, the ring of global sections of $\scrO_B$ operates on
+${f_0}_!\supab(F)$. When $\scrO_B$ is a constant sheaf of rings $k_B$,
+this implies of course that $k$ operates on this abelian sheaf on $B$,
+from which will follow by an obvious argument that with this structure
+of a sheaf of $k$-modules, ${f_0}_!\supab(F)$ may indeed be identified
+with $f_!(F)$.
+
+Going over to $\mathrm Lf_!$ which we would like to express via
+$\mathrm L{f_0}_!\supab$, the situation is worse, as we still have to
+check (granting $\scrO_B$ to be constant) that for $F$ a projective
+$\scrO_A$-module, we got
+\begin{equation}
+  \label{eq:138.3}
+  \mathrm L_i{f_0}_!\supab(F)=0\quad\text{for $i>0$.}\tag{3}
+\end{equation}
+This isn't always true, even when $B$ is the final object in \Cat, and
+$A$ has a final object, hence $\scrO_A$ is a projective module
+over\pspage{582} itself, and \eqref{eq:138.3} reads
+\[\mathrm H_i(A,\scrO_A) =0 \quad\text{for $i>0$,}\]
+which isn't always true. (NB\enspace if it were for any commutative
+ring $\scrO_A$ on $A$, it would be too for any abelian sheaf $M$ on
+$A$, as we see by taking $\scrO_A=\bZ_A\otimes M$, hence $A$ would be
+homological dimension $0$, a drastic restriction, indeed, even when
+$A$ has a final object.)
+
+When however $\scrO_A$ is equally a constant sheaf of rings, say
+$\scrO_A=k'_A$, then the relation \eqref{eq:138.3} holds for any
+projective module on $A$. We need only check it for
+\[F=\scrO_A^{(a)} = {k'}^{(a)},\]
+with $a$ in $A$, then \eqref{eq:138.3} follows from
+\begin{equation}
+  \label{eq:138.4}
+  \mathrm L_i {f_0}_!\supab( M^{(a)} )=0 \quad
+  \text{for $i>0$, $M$ in \Ab,}\tag{4}
+\end{equation}
+To check \eqref{eq:138.4}, we take a projective resolution of
+$M^{(a)}$, by using a projective resolution $L_\bullet$ of $M$ in
+\Ab{} and taking $L_\bullet^{(a)}$ (using the fact that the functor
+\[L\mapsto L^{(a)}:\Ab\to\Ahatab\]
+is exact). We then get
+\[\mathrm L{f_0}_!(M^{(a)}) = {f_0}_! (L_\bullet^{(a)}) =
+  L_\bullet^{(b)} \simeq M^{(b)},\]
+where $b=f_0(a)$, and where the last equality stems from exactness of
+$L\mapsto L^{(b)}$. (NB\enspace the relation \eqref{eq:138.4}
+generalizes a standard acyclicity criterion in the homology theory of
+discrete groups\dots)
+
+Thus, we get finally that in case both rings $\scrO_A$ and $\scrO_B$
+are constant, that formation of $\mathrm Lf_!$ commutes to restriction
+of operator rings (provided the rings to which we are restricting are
+constant too -- say they are just the absolute $\bZ_A$ and
+$\bZ_B$). Presumably, a little more care should show the similar
+result for locally constant rings.
+
+Reverting to the case \eqref{eq:138.1} of a general map between ringed
+objects in \Cat, our inability, for a given $\scrO_A$-module $F$ on
+$A$, to define an operation of $\scrO_B$ upon ${f_0}_!\supab$ (while
+there is an operation of the ring $\Gamma(B,\scrO_B)$ upon it), is
+tied up with this difficulty, that formation of ${f_0}_!\supab$, and a
+fortiori of $f_!$ for arbitrary rings $\scrO_A$ and $\scrO_B$, does
+not commute to ``localization'' (as $f_*$ and $\mathrm Rf_*$ does),
+namely to base change of the type\pspage{583}
+\begin{equation}
+  \label{eq:138.5}
+  B_{/b}\to B,\tag{5}
+\end{equation}
+where $b$ is a given object in $B$, and $B_{/b}$ designates as usual
+the category of all ``objects over $b$'' in $B$, i.e., of all arrows
+in $B$ with target $b$. This gives rise to the cartesian square in
+\Cat{}
+\begin{equation}
+  \label{eq:138.6}
+  \begin{tabular}{@{}c@{}}
+    \begin{tikzcd}[baseline=(O.base)]
+      A_{/b}\ar[d]\ar[r] & A\ar[d] \\
+      B_{/b}\ar[r] & |[alias=O]| B
+    \end{tikzcd},
+  \end{tabular}\tag{6}
+\end{equation}
+where $A_{/b}$ is the category of all pairs
+\[\text{$(a,u)$ with $u:f_0(a)\to b$,}\]
+which may be identified equally with the category $A_{/f_0^*(b)}$. The
+commutation property we have in mind is a tautology for $f_*$, and it
+follows for $\mathrm Rf_*$, because the inverse image by $A_{/b}\to A$
+of an injective module on $A$ is an injective module on $A_{/b}$. The
+latter fact is true, more generally, for any ``localization map'', of
+the type $A_{/X}\to A$, with $X$ in \Ahat, i.e., any map which is
+fibering with discrete fibers. Thus, the commutation property for
+$\mathrm Rf_*$ is valid more generally for any base change of the type
+\[B_{/Y}\to B,\]
+with $Y$ in \Bhat{} (not necessarily in $B$). More generally still, it
+can be shown to hold for any map
+\[B'\to B\]
+which is fibering (not necessarily with discrete fibers).
+
+On the other side of the mirror, when taking $f_!$ and its left
+derived functor, already the former definitely does \emph{not} commute
+to base change of the type \eqref{eq:138.5}, i.e., to ``localization
+on the base'' -- something a little hard to get accustomed to! The
+base changes which will do here, are those of the dual type
+\begin{equation}
+  \label{eq:138.5prime}
+  \preslice Bb\to B,\tag{5'}
+\end{equation}
+we may call them maps of ``colocalization'' on the base $B$. It gives
+rise to a cartesian diagram in \Cat{} dual to \eqref{eq:138.6}
+\begin{equation}
+  \label{eq:138.6prime}
+  \begin{tabular}{@{}c@{}}
+    \begin{tikzcd}[baseline=(O.base)]
+      \preslice Ab\ar[d]\ar[r] & A\ar[d] \\
+      \preslice Bb\ar[r] & |[alias=O]| B
+    \end{tikzcd},
+  \end{tabular}\tag{6'}
+\end{equation}
+where\pspage{584} now $\preslice Ab$ is the category of pairs
+\[\text{$(a,u)$ with $u:b\to f_0(a)$.}\]
+We'll have to assume now that both shaves of rings $\scrO_A$,
+$\scrO_B$ are constant, and correspond to the same ring $k$. Thus,
+modules on $A$ and $B$ are just contravariant functors from these
+categories to the category $\AbOf_k$ of $k$-modules, and accordingly,
+$f_!$ (left adjoint to the composition functor $f^*$) may be computed
+by a well-known formula, involving direct limits on the categories
+$\preslice Ab$:
+\begin{equation}
+  \label{eq:138.7}
+  f_!(F)(b) \simeq\varinjlim_{\preslice Ab} F(a),\tag{7}
+\end{equation}
+where the limit in the second member is relative to the
+composition\scrcomment{It seems to me that we're forgetting
+  that $F$ is contravariant. Should be easily fixed by inserting ${}\op$'s,
+  though\dots}
+\[\preslice Ab\to A\xrightarrow F{} \AbOf_k.\]
+(NB\enspace This formula is dual to the formula for $f_*$, the right
+adjoint of $f^*$, closer to intuition -- to mine at any rate --
+because the $\varprojlim$ in
+\[f_*(F)(b) \simeq \varprojlim_{A_{/b}} F(a)\]
+may be ``visualized'' as the set of ``sections'' of $F$ over
+$A_{/b}$.)\enspace From this formula \eqref{eq:138.7} follows at once
+commutation of $f_!$ with colocalization. To get the corresponding
+result for $\mathrm Lf_!$, we have only to use the fact that the
+relevant inverse image functor (corresponding to $\preslice Ab\to A$)
+transforms projective modules into projective modules. As the map
+$\preslice Bb\to B$ is a \emph{cofibering functor with discrete
+  fibers}, so is the map
+\[h:A'=\preslice Ab\to A\]
+deduced by base change. Now, for any such functor $h:A'\to A$ between
+small categories, the inverse image functor
+\[h^*:\Ahat \to {A'}\uphat, \quad\text{or}\quad
+  h_k^*:A\uphat_k \to {A'}\uphat_k\]
+carries indeed projectives into projectives. This statement is dual
+formally to the corresponding statement for injectives, valid when we
+make on $h$ the dual assumption of being \emph{fibering with discrete
+  fibers} -- in the latter case the (well-known) proof comes out
+formally from the fact that the left adjoint functor $h_!$ or $h_!^k$
+carries monomorphisms into monomorphisms -- a fact that we used in
+section~\ref{sec:135} in the form $\mathrm Lh_!^k=h_!^k$ (in case
+$k=\bZ$). In the present case, the proof is essentially the dual one
+-- as a matter of fact, as there are enough\pspage{585} projectives,
+the statement about $h^*$ or $h_k^*$ taking projectives into
+projectives is equivalent with the right adjoint $h_*$ or $h_*^k$ (for
+sheaves of sets, resp.\ sheaves of $k$-modules) transforming
+epimorphisms into epimorphisms, which in the case of $k$-modules can
+be written equally under the equivalent form
+\begin{equation}
+  \label{eq:138.8}
+  \mathrm R^ih_*=0 \quad\text{for $i>0$.}\tag{8}
+\end{equation}
+Now, this exactness property for $h_*$, in the case when $h$ is
+cofibering with discrete fibers, is I guess well known (it is
+well-known to me at any rate), and comes from the specific computation
+of $h_*(F)$ for $F$ in ${A'}\uphat$, valid whenever $h$ is
+\emph{cofibering} (with arbitrary fibers)
+\begin{equation}
+  \label{eq:138.9}
+  h_*(F)(x) \simeq \Gamma(A'_x, F\restrto A'_X)\quad
+  \text{for $x$ in $A$,}\tag{9}
+\end{equation}
+where $A'_X$ is the fiber of $A'$ over $x$ (a category not to be
+confused with $A'_{/x}$, the two being closely related,
+however\dots). In case the fibers of $h$ are discrete, the right-hand
+side of \eqref{eq:138.9} may be written as a product, hence the
+formula
+\begin{equation}
+  \label{eq:138.10}
+  h_*(F)(x) \simeq \prod_{\text{$x'$ in $A'_X$}} F(x'),\tag{10}
+\end{equation}
+(which may be viewed as the dual of the formula \eqref{eq:135.11}
+p.~\ref{p:564}). As in the category of sets (and hence also in
+$\AbOf_k$) a product of epimorphisms is again an epimorphism, the
+result we want follows indeed.
+
+\begin{remarks}
+  1)\enspace The results just given, as well as their proofs,
+  concerning inverse images of injectives or projectives, are valid
+  not only in the case of a common constant sheaf of rings on $A$ and
+  $A'$, but more generally for any sheaf of rings $\scrO_A$ on $A$,
+  when taking on $A'$ the ``induced'' sheaf of rings
+  \begin{equation}
+    \label{eq:138.11}
+    \scrO_{A'} = h^*(\scrO_A).\tag{11}
+  \end{equation}
+  However, it doesn't seem that the result about commutation of
+  $\mathrm Lf_!$ to colocalization is valid under the corresponding
+  assumption $\scrO_A=f^*(\scrO_B)$, without assuming moreover
+  $\scrO_B$ to be constant (hence $\scrO_A$ too), because already for
+  the functor $f_!$ itself for modules it doesn't seem that
+  commutation will hold.
+
+  2)\enspace I should correct as silly mistake I made at the very
+  beginning of this section, when rashly stating that the functor
+  $\mathrm Lf_!$ may be defined for \emph{any} map \eqref{eq:138.1}
+  between ringed objects in \Cat. I was thinking of the fact that for
+  any ringed object $(A,\scrO_A)$ in \Cat, there are indeed enough
+  projectives in the category of $\scrO_A$-modules --\pspage{586}
+  thus, the modules
+  \begin{equation}
+    \label{eq:138.12}
+    \scrO_A^{(a)}, \quad\text{for $a$ in $A$,}\tag{12}
+  \end{equation}
+  are clearly projective, and there are ``sufficiently many''. Thus,
+  any additive functor from $\Mod(\scrO_A)$ to an abelian category
+  admits a total left derived functor. However, it is not always true,
+  for a map \eqref{eq:138.1} of small ringed categories, that the
+  corresponding inverse image functor for modules
+  \[G\mapsto f^*(G) = {f_0}^*(G) \otimes_{{f_0}^*(\scrO_B)} \scrO_A\]
+  admits a left adjoint $f_!$, or what amounts to the same, that this
+  functor (which is right exact) is left exact and commutes to small
+  products. It isn't even true, necessarily, when we assume $A$ and
+  $B$ to be the final category! Left exactness of $f^*$ just means
+  flatness of $\scrO_A$ over $\scrO_B$, i.e., that for any $a$ in $A$,
+  $\scrO_A(a)$ is flat as a module over $\scrO_B(b)$, where
+  $b=f(a)$. As for commutation to small products, it amounts (together
+  with the first condition) to the still more exacting condition that
+  $\scrO_A(a)$ should be a \emph{projective module of finite type over
+    $\scrO_B(b)$}, for any $a$ in $A$. This condition is so close to
+  the condition $\scrO_A={f_0}^*(\scrO_B)$ (already considered in
+  \eqref{eq:138.11} above), that for a bird's eye view as we are
+  aiming at here, we may as well assume this slightly stronger
+  condition! Anyhow, as noticed before, to get commutation of $f_!$
+  with restriction of scalars and with colocalization, even this
+  assumption isn't enough, apparently, and we'll have to assume
+  moreover that $\scrO_B$ (hence also $\scrO_A$) is constant, or for
+  the least, locally constant.
+
+  This brings us back to the case when a fixed ring $k$ is given, and
+  when we are working with categories of presheaves of $k$-modules --
+  a situation studied at length in chapter~\ref{ch:V}. In case the
+  target category $B$ is the final category, hence $\mathrm Lf_!$ is
+  just (absolute) total homology of $A$, this then may be computed
+  nicely, using an ``integrator'' for $A$, namely a projective
+  resolution of $k_{A\op}$ in $(A\op)\uphat_k$. This is more or less
+  where we ended up by the end of chapter~\ref{ch:V}, when developing
+  a nicely autodual homology-cohomology set-up, replacing the category
+  of $k$-modules $\AbOf_k$ by a more-or-less arbitrary abelian
+  category. I was about to go on and carry through a similar treatment
+  in the ``relative'' case, namely for an arbitrary map $f$ in \Cat{}
+  (but then I got caught unsuspectingly by that unending digression on
+  schematic homotopy types, finally making up a whole chapter by
+  itself). Maybe it is still worthwhile to come back to
+  this\pspage{587} without necessarily grinding through a complete
+  formulaire for the five main operations we got so far (namely
+  $\mathrm Lf_!$, $f^*$, $\mathrm Rf_*$, $\Lotimes$, $\RbHom$). Not
+  later than two pages ago or so, we were faced again with two visible
+  dual statements, one about $\mathrm Lf_!$, the other about $\mathrm
+  Rf_*$ -- and feeling silly not to be able to merely deduce one from
+  the other!
+\end{remarks}
+
+\bigbreak
+
+\noindent\hfill\ondate{29.10.}\par
+
+% 139
+\hangsection[Retrospective on ponderings on abelianization, and on
+\dots]{Retrospective on ponderings on abelianization, and on coalgebra
+  structures in \texorpdfstring{\Cat}{(Cat)}.}\label{sec:139}%
+Last night I still pondered a little about the $\mathrm Lf_!$
+operation, and did some more reading in the notes of
+chapter~\ref{ch:V} of about three months ago, which had been getting a
+little distant in my mind. In those notes a great deal of emphasis
+goes with the notions of integrators and cointegrators -- as a matter
+of fact, that whole chapter sprung from an attempt to understand the
+meaning of certain ``standard complexes'' associated with standard
+test categories such as $\Simplex$, which then led us to the notions
+of an integrator (via the intermediate one of an
+``abelianizator''). This in turn brought us to the $*_k$ formalism,
+expressing most conveniently the relationship between categories such
+as $A\uphat_k$ and $(A\op)\uphat_k$ ($k$ any commutative ring), and
+its various avatars. I was so pleased with this formalism and its
+``computational'' flavor, that in my enthusiasm I subsumed under it
+the dual treatment of homology and cohomology for an object $A$ of
+\Cat{} (with coefficients in a complex of \scrM-valued presheaves,
+\scrM{} being an abelian category satisfying some mild conditions), in
+section~\ref{sec:108}, as a particular case of the total derived
+functors $F_\bullet \Last_k L_\bullet'$ and
+$\RHom_k(L_\bullet,K^\bullet)$ (with values in the derived category of
+\scrM). The main point here was using \emph{projective resolutions} of
+the argument $L_\bullet$ in $B\uphat_k$ or $A\uphat_k$ (where
+$B=A\op$), which in the most important case was just the constant
+sheaf of rings $k_B$ or $k_A$ -- rather than resolve the argument
+$F_\bullet$ (projectively) or $K^\bullet$ (injectively), namely the
+coefficients for homology or cohomology. It was the enthusiasm of the
+adept of a game he just discovered -- I was going to try it out for
+the next step, namely relative homology and cohomology $\mathrm Lf_!$
+and $\mathrm Rf_*$, with $f$ any map in \Cat{} -- but then I got
+caught by the more fascinating schematization game. Coming back now
+upon the rather routine matter of looking up a comprehensive mutually
+dual treatment of $\mathrm Lf_!$ and $\mathrm Rf_*$, it doesn't seem
+that the formalism of integrators and cointegrators is going to be of
+much help. To be more specific, in order to compute (or simply define)
+$\mathrm Lf_!(F_\bullet)$\pspage{588} or $\mathrm Rf_*(K^\bullet)$,
+for a general map
+\[f:A\to B\]
+in \Cat, and $F_\bullet\in\D^-(A\uphat_k)$,
+$K^\bullet\in\D^+(A\uphat_k)$, I do not see any means of bypassing
+projective resolutions of $L_\bullet$, injective ones of
+$K^\bullet$. Taking the more familiar case of $\mathrm
+Rf_*(K^\bullet)$, one natural idea of course would be to take a
+projective resolution $L_\bullet^A$ of $k_A$ (i.e., a cointegrator for
+$A$), and write tentatively
+\begin{equation}
+  \label{eq:139.1}
+  \mathrm Rf_*(K^\bullet) \overset{\text{?}}{\simeq}
+  f_*(\bHom_k^{\bullet\bullet}(L_\bullet^A,K^\bullet).\tag{1}
+\end{equation}
+The (misleading) reflex inducing us to write down this formula, is
+that this formula looks as if it were to boil down to the similar
+(correct) formula for the maps $A_{/b}\to e$, when taking the
+localizations on $B$,
+\[B_{/b}\to B.\]
+For this intuition to be correct, it should be true that the
+restriction (or ``localization'') of $L_\bullet^A$ to $A_{/b}$ (which
+is of course a resolution of the constant sheaf $k$ on $A_{/b}$) is
+indeed a cointegrator on $A_{/b}$, namely that its components are
+still projective. This, however, we suspect, will hold true only under
+very special assumptions -- as in general, it is inverse image by
+\emph{colocalization} (not by localization) that takes projectives
+into projectives. Thus, I don't expect a relation \eqref{eq:139.1} to
+hold, except under most exacting conditions on $f$ and $K^\bullet$,
+which I didn't try to pin down. To take an example, assume $A$ has a
+final object, hence $k_A$ is projective and we may take
+$L_\bullet^A=k_A$, then \eqref{eq:139.1} reads (when $K^\bullet=K$ is
+reduced to degree zero)
+\[\mathrm Rf_*(K) \simeq f_*(K), \quad
+  \text{i.e., $\mathrm R^if_*(K)=0$ for $i>0$,}\]
+which need not hold true even if $K$ is constant ($=k_A$ say). For
+instance, we may start with an arbitrary object $A_0$ of \Cat{} and
+add a final object $e_1$ to get $A$ (intuitively, it is the ``cone''
+over $A_0$), which is mapped into the cone over $e$,
+$B=\Simplex_1=(0\to 1)$, in the obvious way. Then for any sheaf $K$ on
+$A$, with restriction $K_0$ to $A_0$, we get
+\[\mathrm R^if_*(K)_0\text{ (fiber at $0$) } = \mathrm H^i(A_0,K_0),\]
+which needs not be $0$ for $i>0$.
+
+There is a big blunder at the end of section~\ref{sec:101}, where the
+formulæ \eqref{eq:101.12}, \eqref{eq:101.12prime}, \eqref{eq:101.13}
+(p.~\ref{p:377}) (supposed to be ``essentially trivial''), are false
+for essentially the same kind of reason. The formulæ ran into the
+typewriter as a matter of course, as\pspage{589} they looked just the
+same as familiar ones from the standard duality formulaire (with
+$\mathrm Lf_!$, $f^*$ replaced by $\mathrm Rf_!$, $f^!$). The first
+one reads, in case as above when $A$ has a final object $\varepsilon$
+\begin{equation}
+  \label{eq:139.2}
+  \mathrm Rf_*(f^*(K)) \overset{\text{?}}{\simeq}
+  \bHom_k(f_!(k_A),K),\tag{2}
+\end{equation}
+But we have 
+\[f_!(k_A)=f_!(k^{(\varepsilon)}) = k^{(b)} , \quad
+  \text{where $b=f_!(\varepsilon)=f(\varepsilon)$,}\]
+and if $f$ takes final object into final object, we thus get
+$f_!(k_A)=k_B$, and the right-hand side of \eqref{eq:139.2} is just
+$K$, and hence \eqref{eq:139.2} implies
+\[\mathrm R^if_*(f^*(K)) = 0 \quad \text{for $i>0$,}\]
+which, however, needs not be true even for $K=k_B$, as we saw with the
+previous example.
+
+To come back to the general $\mathrm Lf_!$, $\mathrm Rf_*$ formalism,
+it seems it can't be helped, we'll have to do the usual silly thing
+and just resolve the argument involved, projectively in one case,
+injectively in the other. Even in the ``absolute case'' when $B=e$, we
+couldn't help it, either taking such resolutions, when it comes to
+working with the internal operations $\RbHom_k(L_\bullet,K^\bullet)$
+or $F_\bullet\Lotimes_k L_\bullet'$, as we saw already in
+section~\ref{sec:108} (which should have tuned down a little my
+committedness to integrators, but it didn't!).
+
+Once this got clear, in order to turn the homological algebra mill,
+all we still need is a handy criterion for existence of ``enough''
+projectives or injectives in categories of the type
+\[ \AhatM = \bHom(A\op, \scrM),\]
+with \scrM{} an abelian category. In section~\ref{sec:109} we got such
+a criterion (prop.~\ref{prop:109.4} p.~\ref{p:433}) -- the simplest
+one can imagine: it is sufficient that (besides the stability under
+direct or inverse limits, needed anyhow in order for the functor $f_!$
+resp.\ $f_*$ from \AhatM{} to \BhatM\pspage{590} to exist) that in
+\scrM{} there should be enough projectives resp.\ injectives! This
+gives what is needed, surely, in order to grind through a mutually
+dual treatment of relative homology $\mathrm Lf_!$ and cohomology
+$\mathrm Rf_*$. I have the feeling that the little work ahead, for
+defining the basic operations and working out the relevant formulaire
+(including ``cap products''), is a matter of mere routine, and I don't
+really expect any surprise may come up. Therefore, I don't feel like
+grinding through this, and rather will feel free to use whenever
+needed the most evident formulæ, as the adjunction formulæ between the
+three functors
+\[ \mathrm Lf_!, \quad f^*, \quad \mathrm Rf_*,\]
+transitivity isomorphisms for a composition of maps, possibly also
+various projection formulæ -- trying however to be careful with base
+change questions, notably for $\mathrm Lf_!$, and not repeat the same
+blunders!
+
+In retrospect, the main role for me of the reflections of
+chapter~\ref{ch:V} on abelianization has been to become a little more
+familiar with the \emph{homology} formalism in \Cat, namely
+essentially with the $\mathrm Lf_!$ operation, which has been more or
+less a white spot in my former experience, centered rather upon
+cohomology. An interesting, still somewhat routine byproduct of these
+ponderings has been the careful formulation of the duality
+relationship around the pairings between sheaves and co-sheaves,
+namely the operations $*_k$ and $\oast_k$. Granting this, the game
+with integrators and cointegrators boils down to the standard reflex,
+of taking projective resolutions of the ``unit'' sheaf or cosheaf,
+$k_A$ or $k_{A\op}$ -- which are the most obvious objects at hand of
+all, in our coefficient categories.
+
+The one idea which seems to me of wider scope and significance in this
+whole reflection on abelianization, is the ``further step in
+linearization'', whereby the models in \Cat{} are replaced by their
+$k$-additive envelope, endowed moreover with their natural
+\emph{diagonal map} (section~\ref{sec:109}). The psychological effect
+of this discovery has been an immediate one -- it triggered at once
+the reflection on schematization of chapter~\ref{ch:VI}. This
+reflection, apparently, took me into a rather different direction from
+those ``$k$-coalgebra structures in \Cat'', which had reawakened and
+made more acute the feeling that homotopy types should make sense
+``over any ground ring''. Coming back now to the homology and
+cohomology formalism within \Cat, it remains\pspage{591} a very
+striking fact indeed for me, that as far as I can see at present, all
+basic operations in the (commutative) homology and cohomology
+formalism in \Cat, and their basic properties and interrelations,
+should make sense for these linearized objects, which therefore may be
+viewed as more perfect carriers still than small categories for
+embodying the relevant formalism. To what extent this feeling is
+indeed justified, cannot of course be decided beforehand -- only
+experience can tell. For instance, does the ``six operations duality
+formalism'' contemplated lately for \Cat{} (sections~\ref{sec:136},
+\ref{sec:137}), which has still to be worked out, carry over to this
+wider, linearized set-up? This will become clearer when the relevant
+notions in \Cat{} are understood, so that it will become a meaningful
+question whether for a map in \Cat, the property of being proper, or
+smooth, or an immersion, may be read off in terms of properties of the
+corresponding map of coalgebra structures in \Cat. And what about
+subtler types of cohomology operations, such as the Steenrod
+operations (which, I remember, may be defined in the context of
+cohomology with coefficients in general sheaves of $\bF_p$-modules)?
+
+When concerned with homology and cohomology formalism in \Cat,
+involving general sheaves of coefficients, not merely locally constant
+ones, we are leaving, strictly speaking, the waters of a reflection on
+``homotopy models''. The objects of \Cat{} now are no longer viewed as
+mere models for homotopy types, but rather, each one as defining a
+topos, with the manifold riches it carries; a richness similar to the
+one of a topological space, almost all of which is being stripped off
+when looking at the mere homotopy type -- including even such basic
+properties as dimension, compactness, smoothness, cardinality and the
+like. When passing from an object in \Cat{} to the corresponding
+coalgebra structure in \Cat, much of this richness is preserved --
+maybe everything, indeed, which can be expressed in terms of
+\emph{commutative} sheaves of coefficients. As for the realm of
+non-commutative cohomology formalism (which is supposed to be the main
+these of these notes, with overall title ``Pursuing Stacks''!), it
+doesn't seem, not at first sight at any rate, that much of this could
+be read off the enveloping coalgebra $P=\Add_k(A)$ of a given object
+$A$ in \Cat{} -- except of course in the case when $A$ can be
+recovered in terms of $P$, maybe as the category of ``exponential''
+pairs $(x,u)$, where $x$ is in $P$ and
+\[ u:\delta(x) \simeq x \otimes_k x\]
+an isomorphism.
+
+\clearpage
+
+\noindent\hfill\ondate{4.11.}\pspage{592}\par
+
+% 140
+\hangsection{The meal and the guest.}\label{sec:140}%
+Life keeps pushing open the doors of that well-tempered hothouse of my
+mathematical reflections, as a fresh wind and often an impetuous one,
+sweeping off the serene quietness of abstraction, -- a breath rich
+with the manifold fragrance of the world we live in. This is the world
+of conflict, weaving around each birth and each death and around the
+lovers' play alike -- it is the world we all have been born into
+without our choosing. I used to see it as a stage -- the stage set for
+our acting. Our freedom (rarely used indeed!) includes choosing the
+role we are playing, possibly changing roles -- but not choosing or
+changing the stage. It doesn't seem the stage ever changes during the
+history of mankind -- only the decors kept changing. More and more,
+however, over the last years, I have been feeling this world I am
+living in, the world of conflict, somehow as a \emph{meal} -- a meal
+of inexhaustible richness. Maybe the ultimate fruit and meaning of all
+my acting on that stage, is that parts of that meal, of that richness,
+be actually eaten, digested, assimilated -- that they become part of
+the flesh and bones of my own being. Maybe the ultimate purpose of
+conflict, so deeply rooted in every human being, is to be the raw
+material, to be eaten and digested and changed into understanding
+about conflict. Not a collective ``understanding'' (I doubt there is
+such a thing!), written down in textbooks or sacred books or whatever,
+nor even something expressed or expressible in words necessarily --
+but the kind of immediate knowledge, rather, the walker has about
+walking, the swimmer about swimming, or the suckling about milk and
+mother's breasts. My business is to be a learner, not a teacher --
+namely to allow this process to take place in my being, letting the
+world of conflict, of suffering and of joy, of violence and of
+tenderness, enter and be digested and become knowledge about myself.
+
+I am not out, though, to write a ``journal intime'' or meditation
+notes, so I guess I better get back to the thread of mathematical
+reflection where I left it, rather than write allusively about the
+events of these last days, telling me about life and about myself
+through one of my children.
+
+\bigbreak
+
+\noindent\hfill\ondate{12.11.}\par
+
+Maybe at times I like to give the impression, to myself and hence
+others, that I am the easy learner of things of life, wholly
+relaxed,\pspage{593} ``cool'' and all that -- just keen for learning,
+for eating the meal and welcome smilingly whatever comes with its
+message, frustration and sorrow and destructiveness and the softer
+dishes alike. This of course is just humbug, an image
+d'Épinal\scrcomment{the Épinal prints being proverbial for a naive
+  depiction, showing only good aspects\dots} which at whiles I'll kid
+myself into believing I am like. Truth is that I am a hard learner,
+maybe as hard and reluctant as anyone. At any rate, the inbuilt
+mechanisms causing rejection of the dishes unpalatable to my wholly
+conditioned, wholly ego-controlled taste, are as much present in me
+now as they have ever been in my life, and as much as in anyone else I
+know. This interferes a lot with the learning -- it causes a
+tremendous amount of friction and energy dispersion (wholly unlike
+what happens when I am learning mathematics, say, namely discovering
+things about any kind of substance which my own person and ego is not
+part of\dots). If there has been anything new appearing in my life, it
+is surely not the end of this process of dispersion, or the end of
+inertia, closely related to dispersion. It is something, rather, which
+causes learning to take place all the same -- be it the hard way, as
+it often happens, very much like the troubled digestion of one who
+took a substantial meal reluctantly or in a state of nervousness, of
+crispation. Once one is through with the digestion, though, the food
+one ate is transformed into flesh and muscles, blood and bones and the
+like, just as good and genuine as if the meal had been taken relaxedly
+and with eager appetite, as it deserved. What really counts for the
+process of assimilation to be able to take place, is that in a certain
+sense the food, palatable or not, be \emph{accepted} -- not vomited,
+or just kept in the bowels like a foreign body, sometimes for
+decennaries.\scrcomment{decennary = decade} The remarkable fact I come
+to know through experience, is that even after having been kept thus
+inertly for a lifetime, a process of digestion and assimilation may
+still come into being and transform the obtrusive stuff into living
+substance.
+
+During the last week I have been sick for a few days -- a
+grippe\scrcomment{grippe = the flu} I might say, but surely a case of
+troubled digestion too. It seems though I am through now -- till the
+next case at any rate! I daresay life has been generous with me for
+these last three months, while I haven't even taken the trouble to
+stop with the mathematical nonsense for any more than a week or
+two. This week, too, I still did some mathematical scratchwork, still
+along the lines of abelianization, which keeps showing a lot richer
+than suspected.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main.tex"
+%%% End:

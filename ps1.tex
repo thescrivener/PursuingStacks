@@ -1,0 +1,1158 @@
+%% Anti-Copyright 2015 - the scrivener
+
+\chapter{The Take-off (a letter to Daniel Quillen)}
+\label{ch:I}
+%\addcontentsline{toc}{chapter}{The Take-off (a letter to Daniel Quillen)}
+
+\par\hfill Les Aumultes \ondate{19.2.}1983\namedpspage{L.1}{1}\par
+
+Dear Daniel,
+
+% 1
+\hangsection{The importance of innocence.}\label{sec:1}%
+Last year Ronnie Brown from Bangor sent me a heap of reprints and
+preprints by him and a group of friends, on various foundational
+matters of homotopical algebra. I did not really dig through any of
+this, as I kind of lost contact with the technicalities of this kind
+(I was never too familiar with the homotopy techniques anyhow, I
+confess) -- but this reminded me of a few letters I had exchanged with
+Larry Breen in 1975, where I had developed an outline of a program for
+a kind of ``topological algebra'', viewed as a synthesis of
+homotopical and homological algebra, with special emphasis on topoi --
+most of the basic intuitions in this program arising from various
+backgrounds in algebraic geometry. Some of those intuitions we
+discussed, I believe, at IHES eight or nine years before, at a time
+when you had just written up your nice ideas on axiomatic homotopical
+algebra,\scrcomment{\textcite{Quillen1967}} published since in
+Springer's Lecture Notes. I write you under the assumption that you
+have not entirely lost interest for those foundational questions you
+were looking at more than fifteen years ago. One thing which strikes
+me, is that (as far as I know) there has not been any substantial
+progress since -- it looks to me that an understanding of the basic
+structures underlying homotopy theory, or even homological algebra
+only, is still lacking -- probably because the few people who have a
+wide enough background and perspective enabling them to feel the main
+questions, are devoting their energies to things which seem more
+directly rewarding. Maybe even a wind of disrepute for any
+foundational matters whatever is blowing nowadays!  In this respect,
+what seems to me even more striking than the lack of proper
+foundations for homological and homotopical algebra, is the absence I
+daresay of proper foundations for topology itself! I am thinking here
+mainly of the development of a context of ``tame'' topology, which (I
+am convinced) would have on the everyday technique of geometric
+topology (I use this expression in contrast to the topology of use for
+analysts) a comparable impact or even a greater one, than the
+introduction of the point of view of schemes had on algebraic
+geometry. The psychological drawback here I believe is not anything
+like messiness, as for homological and homotopical algebra (as for
+schemes), but merely the inrooted inertia which prevents us so
+stubbornly from looking innocently, with fresh eyes, upon things,
+without being dulled and imprisoned by standing habits of thought,
+going with a familiar context -- \emph{too} familiar a context! The
+task of working out the foundations of tame topology, and a
+corresponding structure theory for ``stratified (tame) spaces'', seems
+to me a lot more urgent and exciting still
+than\namedpspage{L.1prime}{1'} any program of homological,
+homotopical or topological algebra.
+
+% 2
+\hangsection{A short look into purgatory.}\label{sec:2}%
+The motivation for this letter was the latter topic
+however. Ronnie Brown and his friends are competent algebraists and
+apparently strongly motivated for investing energy in foundational
+work, on the other hand they visibly are lacking the necessary scope
+of vision which geometry alone provides. They seem to me kind of
+isolated, partly due I guess to the disrepute I mentioned before -- I
+suggested to try and have contact with people such as yourself, Larry
+Breen, Illusie and others, who have the geometric insight and who
+moreover, may not think themselves too good for indulging in
+occasional reflection on foundational matters and in the process help
+others do the work which should be done.
+
+At first sight it has seemed to me that the Bangor group had indeed
+come to work out (quite independently) one basic intuition of the
+program I had envisioned in those letters to Larry Breen -- namely
+that the study of $n$-truncated homotopy types (of semisimplicial
+sets, or of topological spaces) was essentially equivalent to the
+study of so-called $n$-groupoids (where $n$ is any natural
+integer). This is expected to be achieved by associating to any space
+(say) $X$ its ``fundamental $n$-groupoid'' $\Pi_n(X)$, generalizing
+the familiar Poincar\'e fundamental groupoid for $n=1$. The obvious
+idea is that $0$-objects of $\Pi_n(X)$ should be the points of $X$,
+$1$-objects should be ``homotopies'' or paths between points,
+$2$-objects should be homotopies between $1$-objects, etc. This
+$\Pi_n(X)$ should embody the $n$-truncated homotopy type of $X$, in
+much the same way as for $n=1$ the usual fundamental groupoid embodies
+the $1$-truncated homotopy type. For two spaces $X,Y$, the set of
+homotopy-classes of maps $X\to Y$ (more correctly, for general $X,Y$,
+the maps of $X$ into $Y$ in the homotopy category) should correspond
+to $n$-equivalence classes of $n$-functors from $\Pi_n(X)$ to
+$\Pi_n(Y)$ -- etc. There are very strong suggestions for a nice
+formalism including a notion of geometric realization of an
+$n$-groupoid, which should imply that any $n$-groupoid (or more
+generally of an $n$-category) is relativized over an arbitrary topos
+to the notion of an $n$-gerbe (or more generally, an $n$-stack), these
+become the natural ``coefficients'' for a formalism of non-commutative
+cohomological algebra, in the spirit of Giraud's thesis.
+
+But all this kind of thing for the time being is pure heuristics -- I
+never so far sat down to try to make explicit at least a definition of
+$n$-categories and $n$-groupoids, of $n$-functors between these
+etc. When I got the Bangor reprints I at once had the feeling that
+this kind of work\namedpspage{L.2}{2} had been done and the homotopy category
+expressed in terms of \oo-groupoids. But finally it appears this is
+not so, they have been working throughout with a notion of
+\oo-groupoid too restrictive for the purposes I had in mind (probably
+because they insist I guess on strict associativity of compositions,
+rather than associativity up to a (given) isomorphism, or rather,
+homotopy) -- to the effect that the simply connected homotopy types
+they obtain are merely products of Eilenberg-MacLane spaces, too bad!
+They do not seem to have realized yet that this makes their set-up
+wholly inadequate to a sweeping foundational set-up for homotopy. This
+brings to the fore again to work out the suitable definitions for
+$n$-groupoids -- if this is not done yet anywhere. I spent the
+afternoon today trying to figure out a reasonable definition, to get a
+feeling at least of where the difficulties are, if any. I am guided
+mainly of course by the topological interpretation. It will be short
+enough to say how far I got. The main part of the structure it seems
+is expressed by the sets $F_i$ ($i\in\bN$) of $i$-objects, the source,
+target and identity maps
+\begin{align*}
+  \cst s_1^i, \cst t_1^i &: F_i \to F_{i-1} \quad (i\ge 1) \\
+  \cst k_1^i &: F_i \to F_{i+1} \quad (i\in\bN) \\
+\intertext{and the symmetry map (passage to the inverse)}
+  \inv_i &: F_i \to F_i \quad (i\ge 1),
+\end{align*}
+satisfying\marginpar{\emph{notation:}\\ $d_a=\cst k_1^i(a)$,\\ $\check u =
+  \inv_i(u)$} some obvious relations: $\cst k_1^i$ is right inverse to
+the source and target maps $\cst s_1^{i+1}, \cst t_1^{i+1}$, $\inv_i$
+is an involution and ``exchanges'' source and target, and moreover for
+$i\ge2$
+\begin{align*}
+  \cst s_1^{i-1} \cst s_1^i
+  &= \cst s_1^{i-1} \cst t_1^i \;
+    \Bigl(\eqdef \cst s_2^i : F_i \to F_{i-2} \Bigr) \\
+  \cst t_1^{i-1} \cst s_1^i
+  &= \cst t_1^{i-1} \cst t_1^i \;
+    \Bigl(\eqdef \cst t_2^i : F_i \to F_{i-2} \Bigr) ;
+\end{align*}
+thus the composition of the source and target maps yields, for $0\le
+j\le i$, just \emph{two} maps
+\begin{equation*}
+  \cst s_\ell^i, \cst t_\ell^i : F_i \to F_{i-\ell} = F_j \quad (\ell = i-j).
+\end{equation*}
+The next basic structure is the composition structure, where the
+usual compoisition of arrows, more specifically of $i$-objects
+($i\ge1$) $v \circ u$ (defined when $\cst t_1(u)=\cst s_1(v)$) must be
+supplemented by the Godement-type operations $\mu * \lambda$ when
+$\mu$ and $\lambda$ are ``arrows between arrows'', etc. Following this
+line of thought, one gets the composition maps
+\begin{equation*}
+  (u,v) \mapsto (v *_\ell u) : (F_i, \cst s_\ell^i) \times_{F_{i-\ell}}
+  (F_i,\cst s_\ell^i) \to F_i,
+\end{equation*}
+the composition of $i$-objects for $1\le \ell\le i$, being defined
+when the $\ell$-target of $u$ is equal to the $\ell$-source of $v$,
+and then we have
+\begin{equation*}
+  \left.\begin{aligned}
+    \cst s_1^i(v *_\ell u) &=  \cst s_1^i(v) *_{\ell-1} \cst s_1^i(u) \\
+    \cst t_1^i(v *_\ell u) &=  \cst t_1^i(v) *_{\ell-1} \cst s_1^i(u)
+    \end{aligned}\right\}
+  \quad \text{$\ell\ge2$ i.e. $\ell-1\ge1$}
+\end{equation*}
+and\namedpspage{L.2prime}{2'} for $\ell=1$
+\begin{align*}
+  \cst s_1(v *_1 u) &= s_1(u) \\
+  \cst t_1(v *_1 u) &= t_1(v)
+\end{align*}
+(NB\enspace the operation $v *_1 u$ is just the usual composition $v \circ
+u$).
+
+One may be tempted to think that the preceding data exhaust the
+structure of \oo-groupoids, and that they will have to be supplemented
+only by a handful of suitable \emph{axioms}, one being
+\emph{associativity} for the operation
+$\overset{i}{\underset{\ell}{*}}$, which can be expressed essentially
+by saying that that composition operation turns $F_i$ into the set of
+arrows of a category having $F_{i-\ell}$ as a set of objects (with the
+source and target maps $\cst s_\ell^i$ and $\cst t_\ell^i$, and with
+identity map $\cst k_\ell^{i-\ell} : F_{i-\ell} \to F_i$ the
+composition of the identity maps $F_{i-\ell} \to F_{i-\ell+1} \to
+\dots \to F_{i-1} \to F_i$), and another being the Godement relation
+\begin{equation*}
+  (v' *_\alpha v) *_\nu (u' *_\alpha u) = (v' *_\nu u') *_\alpha (v
+  *_\nu u)
+\end{equation*}
+(with the assumptions $1\le\alpha\le\nu$, and $u,u',v,v''in F_i$ and
+\begin{equation*}
+  \left\{\begin{aligned}
+      \cst t_\alpha(u)=\cst s_\alpha(u') \\
+      \cst t_\alpha(v)=\cst s_\alpha(v') \\
+    \end{aligned}\right.\quad
+  \cst t_\nu(u) = \cst s_\nu(v) = \cst s_\nu(v') = \cst t_\nu(u')
+\end{equation*}
+implying that both members are defined), plus the two relations
+concerning the inversion of $i$-objects ($i\ge1$) $u \mapsto \check
+u$,
+\begin{multline*}
+  u *_1 \check u = \id_{\cst t_1(u)} , \qquad \check u *_1 u =
+  \id_{\cst s_1(u)} , \qquad
+  (\check v *_\ell \check u) = \text{?} \quad(\ell\ge2)
+\end{multline*}
+It just occurs to me, by the way, that the previous description of
+basic (or ``primary'') data for an \oo-groupoid is already incomplete
+in some rather obvious respect, namely that the symmetry-operation
+$\inv_i : u \mapsto \check u$ on $F_i$ must be complemented by $i-1$
+similar involutions on $F_i$, which corresponds algebraically to the
+intuition that when we have an $(i+1)$-arrow $\lambda$ say between two
+$i$-arrows $u$ and $v$, then we must be able to deduce from it another
+arrow from $\check u$ to $\check v$ (namely $u\mapsto\check u$ has a
+``functorial character'' for variable $u$)? This seems a rather
+anodine modification of the previous set-up, and is irrelevant for the
+main point I want to make here, namely: that for the notion of
+\oo-groupoids we are after, all the equalities just envisioned in this
+paragraph (and those I guess which will ensure naturality by the
+necessary extension of the basic involution on $F_i$) should be
+replaced by ``homotopies'', namely by $(i+1)$-arrows between the two
+members. These arrows should be viewed, I believe, as being part of
+the data, they appear here as a kind of ``secondary'' structure. The
+difficulty which appears now is to work out the natural coherence
+properties\namedpspage{L.3}{3} concerning this secondary structure. The first thing I
+could think of is the ``pentagon axiom'' for the associativity data,
+which occurs when looking at associativities for the compositum (for
+$\overset{i}{\underset{\ell}{*}}$ say) of four factors. Here again the
+first reflex would be to write down, as usual, an \emph{equality} for
+two compositions of associativity isomorphisms, exhibited in the
+pentagon diagram. One suspects however that such equality should,
+again, be replaced by a ``homotopy''-arrow, which now appears as a
+kind of ``ternary'' structure -- before even having exhausted the list
+of coherence ``relations'' one could think of with the respect to the
+secondary structure! Here one seems caught at first sight in an
+infinite chain of ever ``higher'', and presumably, messier structures,
+where one is going to get hopelessly lost, unless one discovers some
+simple guiding principle for shedding some clarity in the mess.
+
+% 3
+\hangsection{``Fundamental \texorpdfstring{\oo}{oo}-groupoids'' as
+  objects of a ``model category''?}\label{sec:3}%
+I thought of writing you mainly because I believe that,
+if anybody, you should know if the kind of structure I am looking for
+has been worked out -- maybe even \emph{you} did? In this respect, I
+vaguely remember that you had a description of $n$-categories in terms
+of $n$-semisimplicial sets, satisfying certain exactness conditions,
+in much the same way as an ordinary category can be interpreted, via
+its ``nerve'', as a particular type of semisimplicial set. But I have
+no idea if your definition applied only for describing $n$-categories
+with strict associativities, or not.
+
+Still some contents in the spirit of your axiomatics of homotopical
+algebra -- in order to make the question I am proposing more seducing
+maybe to you! One comment is that presumably, the category of
+\oo-groupoids (which is still to be defined) is a ``model category''
+for the usual homotopy category; this would be at any rate one
+plausible way to make explicit the intuition referred to before, that
+a homotopy type is ``essentially the same'' as an \oo-groupoid up to
+\oo-equivalence. The other comment: the construction of the
+fundamental \oo-groupoid of a space, disregarding for the time being
+the question of working out in full the pertinent structure on this
+messy object, can be paraphrased in any model category in your sense,
+and yields a functor from this category to the category of
+\oo-groupoids, and hence (by geometric realization, or by
+localization) also to the usual homotopy category. Was this functor
+obvious beforehand? It is of a non-trivial nature only when the model
+category is \emph{not} pointed -- as a matter of fact the whole
+construction can be carried out canonically, in terms of a ``cylinder
+object'' $I$ for the final object $e$ of the model category, playing
+the role of the unit argument.\namedpspage{L.3prime}{3'}
+It's high time to stop this letter -- please excuse me if it should
+come ten or fifteen years too late, or maybe one year too early. If
+you are not interested for the time being in such general nonsense,
+maybe you know someone who is \ldots
+
+\bigskip
+
+Very cordially yours
+
+\bigbreak
+
+\noindent\hfill\ondate{20.2.}\namedpspage{L.4}{4}\par
+
+I finally went on pondering about a definition of
+\oo-groupoids, and it seems to me that, after all, the topological
+motivation does furnish the ``simple guiding principle'' which
+yesterday seemed to me to be still to be discovered, in order not to
+get lost in the messiness of ever higher order structures. Let me try
+to put it down roughly.
+
+% 4
+\hangsection{A bit of ordering in the mess of ``higher order
+  structures''.}\label{sec:4}%
+First I would like to correct somewhat the rather indiscriminate
+description I gave yesterday of what I thought of viewing as
+``primary'', secondary, ternary etc.\ structures for an
+\oo-groupoid. More careful reflection conduces to view as the most
+primitive, starting structure on the set of sets $F_i$ ($i\in\bN$), as
+a skeleton on which progressively organs and flesh will be added, the
+mere data of the source and target maps
+\begin{equation*}
+  \cst s_i, \cst t_i : F_i \rightrightarrows F_{i-1}
+  \quad(i \ge 1),
+\end{equation*}
+which it will be convenient to supplement formally by corresponding
+maps $\cst s_0, \cst t_0$ for $i=1$, from $F_0$ to
+$F_{-1} \eqdef \text{one-element set}$. In a moment we will pass to a
+universal situation, when the $F_i$ are replaced by the corresponding
+``universal'' objects $\boldsymbol F_i$ in a suitable category stable
+under finite products, where $F_{-1}$ will be the final element. For
+several reasons, it is not proper to view the inversion maps
+$\inv_i : F_i \to F_i$, and still less the other $i-1$ involutions on
+$F_i$ which I at first overlooked, as being part of the primitive or
+``skeletal'' structure. One main reason is that already for the most
+usual $2$-groupoids, such as the $2$-groupoid whose $0$-objects are
+ordinary ($1$-)groupoids, the $1$-objects being equivalences between
+these (namely functors which are fully faithful and essentially
+surjective), and the $2$-objects morphisms (or ``natural
+transformations'') between such, there is \emph{not}, for an
+$i$-object $f: C \to C'$, a natural choice of an ``inverse'' namely of
+a quasi-inverse in the usual sense. And even assuming that such
+quasi-inverse is chosen for every $f$, it is by no means clear that
+such choice can be made involutive, namely such that
+$(f\upvee)\upvee = f$ for every $f$ (and not merely $(f\upvee)\upvee$
+isomorphic to $f$). The maps $\inv_i$ will appear rather, quite
+naturally, as ``primary structure'', and they will not be involutions,
+but ``pseudo-involutions'' (namely involutions ``up to homotopy''). It
+turns out that among the various functors that we will construct, from
+the category of topological spaces to the category of \oo-groupoids
+(the construction depending on arbitrary choices and yielding a large
+bunch of mutually non-isomorphic functors, which however are
+``equivalent'' in a sense which will have to be made precise) -- there
+are choices neater than others, and some of these will yield in the
+primary structure maps $\inv_i$ which are actual involutions and
+similarly for the other pseudo-involutions, appearing in succession as
+higher order structure. The possibility of such neat and fairly
+natural choices had somewhat misled me\namedpspage{L.4prime}{4'} yesterday.
+
+What may look less convincing though at first sight, is my choice to
+view as non-primitive even the ``degeneration maps'' $\cst k_1^i : F_i
+\to F_{i+1}$, associating to every $i$-objects the $i+1$-object acting
+as an identity on the former. In all cases I have met so far, these
+maps are either given beforehand with the structure (of a $1$-category
+or $2$-category say), or they can be uniquely deduced from the
+axioms. In the present set-up however, they seem to me to appear more
+naturally as ``primary'' (not as primitive) structure, much in the
+same way as the $\inv_i$. Different choices for associating an
+\oo-groupoid to a topological space, while yielding the same base-sets
+$F_i$, will however (according to this point of view) give rise to
+different maps $\cst k_1^i$. The main motivation for this point of
+view comes from the fact that the mechanism for a uniform construction
+of the chain of ever higher order structures makes a basic use of the
+source and target maps only and of the ``transposes'' (see below), and
+(it seems to me) not at all of the degeneration maps, which in this
+respect rather are confusing the real picture, if viewed as
+``primitive''.
+The degeneration maps rather appear as typical cases of primary
+structure, probably of special significance in the practical handling
+of \oo-groupoids, but not at all in the conceptual machinery leading
+up to the construction of the structure species of ``\oo-groupoids''.
+
+Much in the same way, the composition operations
+$\overset{i}{\underset{\ell}{*}}$ are viewed as primary, not as
+primitive or skeletal structure. Their description for the fundamental
+\oo-groupoid of a space -- for instance the description of composition
+of paths -- depends on arbitrary choices, such as the choice of an
+isomorphism (say) between $(I,1) \amalg_e (I,0)$ and $I$, where $I$ is
+the unit interval, much in the same way as the notion of an inverse of
+a path depends on the choice of an isomorphism of $I$ with itself,
+exchanging the two end-points $0$ and $1$. The operations
+$\overset{i}{\underset{2}{*}}$ of Godement take sense only once the
+composition operations $*_1$ are defined -- they are ``secondary
+structure'', and successively the operations $*_3, \ldots, *_i$ appear
+as ternary etc.\ structure. This is correctly suggested by the
+notations which I chose yesterday, where however I hastily threw all
+the operations into a same pot baptized ``primary structure''!
+
+% 5
+\hangsection{Jumping over the abyss!}\label{sec:5}%
+It is about time though to come to a tentative precise definition of
+description of the process of stepwise introduction of an increasing
+chain of higher order structure. This will be done by introducing a
+canonical sequence of categories and functors
+\[ C_0 \to C_1 \to C_2 \to \dots \to C_n \to C_{n+1} \to \cdots,\]
+where $C_n$ denotes the category harbouring the ``universal''\namedpspage{L.5}{5}
+partial structure of a would-be \oo-groupoid, endowed only with its
+``structure of order $\le n$''. The idea is to give a direct inductive
+construction of this sequence, by describing $C_0$, and the passage
+from $C_n$ to $C_{n+1}$ $(n\ge0$), namely from an $n$-ary to
+$(n+1)$-ary structure. As for the meaning of ``universal structure'',
+once a given structure species is at hand, it depends on the type of
+categories (described by the exactness properties one is assuming for
+these) one wants to take as carriers for the considered structure, and
+the type of exactness properties one assumes for the functor one
+allows between these. The choice depends partly on the particular
+species; if it is an algebraic structure which can be described say by
+a handful of composition laws between a bunch of base sets (or
+base-objects, when looking at ``realizations'' of the structure not
+only in the category \Sets), one natural choice is to take categories
+with finite products, and functors which commute to these. For more
+sophisticated algebraic structures (including the structure of
+category, groupoid or the like), which requires for the description of
+data or axioms not only finite products, but also some fiber products,
+one other familiar choice is to take categories with finite inverse
+limits, and left exact functors. Still more sophisticated structures,
+when the description of the structure in terms of base objects
+requires not only some kind of inverse limits, but also more or less
+arbitrary direct limits (such as the structure of a comodule over an
+algebra, which requires consideration of tensor products over a ring
+object\marginpar{or torsors under a group\ldots}), still more
+stringent conditions will have to be imposed upon categories and
+functors between these, for the structure to make a sense in these
+categories, and the functors to transform a structure of this type in
+one category into one of same type in another. In most examples I have
+looked up, everything is OK taking categories which are topoi, and
+functors between these which are inverse image functors for morphisms
+of topoi, namely which are left exact and commute with arbitrary
+direct limits. There is a general theorem for the existence of
+universal structures, covering all these cases -- for instance there
+is a ``classifying topos'' for most algebro-geometric structures,
+whose cohomology say should be viewed as the ``classifying
+cohomology'' of the structure species considered. In the case we are
+interested in here, it is convenient however to work with the smallest
+categories $C_n$ feasible -- which amounts to being as generous as
+possible for the categories one is allowing as carriers for the
+structure of an \oo-groupoid, and for the functors between these which
+are expected to carry an \oo-groupoid into an \oo-groupoid. What we
+will do is define ultimately a structure of an \oo-groupoid in a
+category $C$, as a sequence of objects $F_i$ ($i\in\bN$), endowed with
+some structure to be defined,\namedpspage{L.5prime}{5'} assuming merely that in $C$
+finite products of the $F_i$ exist, plus certain finite inverse limits
+built up with the $F_i$'s and the maps $\cst s_\ell^i$, $\cst
+t_\ell^i$ between them (the iterated source and target maps). It
+should be noted that the type of $\varprojlim$ we allow, which will
+have to be made precise below, is fixed beforehand in terms of the
+``skeletal'' or ``primitive'' structure alone, embodied by the family
+of couples $(\cst s_i, \cst t_i)_{i\in\bN}$. This implies that the
+categories $\bC_i$ can be viewed as having \emph{the same set of
+  objects}, namely the objects $\boldsymbol F_i$ (written
+in bold\scrcomment{was: \emph{underlined}} now to indicate their
+universal nature, and including as was said before $\boldsymbol F_{-1} =
+\text{final object}$), plus the finite products and iterated fiber
+products of so-called ``standard'' type. While I am writing, it
+appears to me even that the finite products here are of no use (so we
+just drop them both in the condition on categories which are accepted
+for harbouring \oo-groupoids, and in the set of objects of the
+categories $C_i$). Finally, the common set of objects of the
+categories $\bC_i$ is the set of ``standard'' iterated fiber
+products of the $\boldsymbol F_i$, built up using only the primitive
+structure embodied by the maps $\cst s_i$ and $\cst
+t_i$ (which I renounce to underline!).
+This at the same time gives, in principle, a precise definition of
+$\bC_0$, at least up to equivalence -- it should not be hard anyhow
+to give a wholly explicit description of $\bC_0$ as a small
+category, having a countable set of objects, once the basic notion of
+the standard iterated fiber-products has been explained.
+
+Once $\bC_0$ is constructed, we will get the higher order
+categories $\bC_1$ (primary), $\bC_2$ etc.\ by an inductive
+process of \emph{successively adding arrows}. The category $\bC_\oo$
+will then be defined as the direct limit of the categories
+$\bC_n$, having the same objects therefore as $\bC_0$, with
+\[\Hom_\oo(X, Y) = \varinjlim_n \Hom_n(X, Y)\]
+for any two objects. This being done, giving a structure of
+\oo-groupoid in any category $C$, will amount to giving a functor
+\[\bC_\oo \to C\]
+commuting with the standard iterated fiber-products. This can be
+reexpressed, as amounting to the same as to give a sequence of objects
+($F_i$) in $C$, and maps $s_\ell^i, t_\ell^i$ between these,
+satisfying the two relations I wrote down yesterday (page \hyperref[p:L.2]2) (and
+which of course have to be taken into account when defining $C_0$ to
+start with, I forgot to say before), and such that
+``standard''\footnote{I'll drop the qualification ``iterated''
+  henceforth!} fiber-products defined in terms of these data should
+exist in $C$, plus a bunch of maps between these fiber-products (in
+fact, it will suffice to give such maps with target among the
+$F_i$'s), satisfying certain relations embodied in the structure of
+the category $\bC_\oo$. I am convinced that this bunch of maps
+(namely the maps stemming from arrows in $\bC_\oo$) not only is
+infinite, but cannot either be generated in the\namedpspage{L.6}{6} obvious
+sense by a finite number, nor even by a finite number of infinite
+series of maps such as $\cst k_\ell^i$, $\inv_i$,
+$\overset{i}{\underset{\ell}{*}}$, the compatibility arrows in the
+pentagon, and the like. More precisely still, I am convinced that none
+of the functors $\bC_n \to \bC_{n+1}$ is an equivalence, which
+amounts to saying that the structures of increasing order form a
+strictly increasing sequence -- at every step, there is actual extra
+structure added. This is perhaps evident beforehand to topologists in
+the know, but I confess that for the time being it isn't to me, in
+terms uniquely of the somewhat formal description I will make of the
+passage of $\bC_n$ to $\bC_{n+1}$. This theoretically is all
+that remains to be done, in order to achieve an explicit construction
+of the structure species of an \oo-category (besides the definition of
+standard fiber-products) -- without having to get involved, still less
+lost, in the technical intricacies of ever messier diagrams to write
+down, with increasing order of the structures to be added\ldots
+
+% 6
+\hangsection[The topological model: hemispheres building up the \dots]%
+{The topological model: hemispheres building up the
+  \texorpdfstring{\textup(}{(}tentative\texorpdfstring{\textup)}{)}
+  ``universal \texorpdfstring{\oo-\textup(co\textup)}{oo-(co)}groupoid''.}%
+\label{sec:6}%
+In the outline of a method of construction for the structure species,
+there has not been any explicit mention so far of the topological
+motivation behind the whole approach, which could wrongly give the
+impression of being a purely algebraic one. However, topological
+considerations alone are giving me the clue both for the description
+of the so-called standard fiber products, and of the inductive step
+allowing to wind up from $\bC_n$ to $\bC_{n+1}$? The heuristics
+indeed of the present approach is simple enough, and suggested by the
+starting task, to define pertinent structure on the system of sets
+$F_i(X)$ of ``homotopies'' of arbitrary order, associated to an
+arbitrary topological space. In effect, the functors
+\[ X \mapsto F_i(X)\]
+are representable by spaces $D_i$, which are easily seen to be
+$i$-disks. The source and target maps $s_\ell^i, t_\ell^i :
+F_i(X) \rightrightarrows F_{i-1}(X)$ are transposed to maps, which I may
+denote by the same letters,
+\[s_\ell^i, t_\ell^i : D_{i-1} \rightrightarrows D_i.\]
+Handling around a little, one easily convinces oneself that all the
+main structural items on $F_*(X)$ which one is figuring out in
+succession, such as the degeneracy maps $k_\ell^i$, the inversion maps
+$\inv_i$, the composition $v\cdot u = v *_i u$ for $i$-objects, etc.,
+are all transposed of similar maps which are defined between the cells
+$D_i$, or which go from such cells to certain spaces, deduced from
+these by gluing them together -- the most evident example in this
+respect being the composition of paths, which is transposed of a map
+from the unit segment $I$ into $(I,1)\amalg_e (I,0)$, having
+preassigned values on the endpoints of $I$ (which correspond in fact
+to the images of the two maps $s_1^1,t_1^1 : D_0
+= \text{one point} \rightrightarrows D_1 =
+I$).\namedpspage{L.6prime}{6'} In a more suggestive way, we could say from this
+experiment that the family of discs $(D_i)_{i\in\bN}$, together with
+the maps $s,t$ and a lot of extra structure which enters into the
+picture step by step, is what we would like to call a
+\emph{co-\oo-groupoid in the category} \cTop{} of topological spaces
+(namely an \oo-groupoid in the dual category $\cTop\op$), and
+that the structure of \oo-category on $F_*(X)$ we want to describe is
+the transform of this co-structure into an \oo-groupoid, by the
+contravariant functor from \cTop{} to \Sets{} defined by $X$. The
+(iterated) amalgamated sums in \cTop{} which allow to glue together the
+various $D_i$'s using the $s$ and $t$ maps between them, namely the
+corresponding fibered products in $\cTop\op$, are indeed
+transformed by the functor $h_X$ into fibered products of \Sets.
+The suggestion is, moreover, that if we view our co-structure in \cTop{}
+as a co-structure in the subcategory of Top, say $B_\oo$, whose
+objects are the cells $D_i$ and the amalgamated sums built up with
+these which step-wise enter into play, and whose arrows are all those
+arrows which are introduced step-wise to define the co-structure, and
+all compositions of these -- that this should be \emph{the universal
+  structure} in the sense dual to the one we have been contemplating
+before; or what amount to the same, that the corresponding
+\oo-groupoid structure in the dual category $B_\oo\op$ is
+``universal'' -- which means essentially that it is none other than
+the universal structure in the category $\bC_\oo$ we are
+after. Whether or not this expectation will turn out to be correct (I
+believe it is\footnote{\alsoondate{25.2.} But no longer now and I do not really
+  care! Cf.\ p.\ \hyperref[p:L.10]{10}.}), we should be aware that, while the successive
+introduction of maps between the cells $D_i$ and their ``standard''
+amalgamated sums (which we will define precisely below) depends at
+every stage on arbitrary choices, the categories $\bC_n$ and their
+limit $\bC_\oo$ do not depend on any of these choices; assuming the
+expectation is correct, this means that up to (unique) isomorphism,
+the category $B_\oo$ (and each of the categories $B_n$ of which it
+appears as the direct limit) is independent of those choices -- the
+isomorphism between two such categories transforming any one choice
+made for the first, into the corresponding choice made for the
+second. Also, while this expectation was of course the crucial
+motivation leading to the explicit description of $\bC_0$ and of
+the inductive step from $\bC_n$ to $\bC_{n+1}$, this description
+seems to me a reasonable one and in any case it makes a formal sense,
+quite independently of whether the expectation proves valid or not.
+
+% 7
+\hangsection{Gluing hemispheres: the ``standard amalgamations''.}%
+\label{sec:7}%
+Before pursuing, it is time to give a more complete description of the
+primitive structure on $(D_i)$, as embodied by the maps $s,t$, which I
+will now denote by\footnote{\emph{NB}\enspace it is more natural to consider
+  $\varphi^+$ as ``target'' and $\varphi^-$ as ``source''.}
+\[\varphi_i^+,\varphi_i^- :  D_i \rightrightarrows D_{i+1}. \]
+It appears that these maps are injective, that their images make
+up\namedpspage{L.7}{7} the boundary $S_i = \dot D_{i+1}$ of $D_{i+1}$, more
+specifically these images are just two ``complementary'' hemispheres
+in $S_i$, which I will denote by $S_i^+$ and $S_i^-$. The kernel of
+the pair $(\varphi_i^+, \varphi_i^-)$ is just $S_{i-1} = \dot D_i$,
+and the common restriction of the maps $\varphi_i^+, \varphi_i^-$ to
+$S_{i-1}$ is an isomorphism
+\[ S_{i-1} \simeq S_i^+ \cap S_i^-.\]
+This $S_{i-1}$ in turn decomposes into the two hemispheres $S_{i-1}^+,
+S_{i-1}^-$, images of $D_{i-1}$. Replacing $D_{i+1}$ by $D_i$, we see
+that the $i$-cell $D_i$ is decomposed into a union of $2i+1$ closed
+cells, one being $D_i$ itself, the others being canonically isomorphic
+to the cells $S_j^+,S_j^-$ ($0\le j\le i$), images of $D_j\to D_n$ by
+the iterated morphisms
+\[\varphi_{n,j}^+,\varphi_{n,j}^- :  D_j \rightrightarrows D_n. \]
+This is a cellular decomposition, corresponding to a partition of
+$D_n$ into $2n+1$ open cells $D_n$, $S_j^+ = \varphi_{n,j}^+(D_j)$,
+$S_j^- = \varphi_{n,j}^-(D_j)$. For any cell in this decomposition,
+the incident cells are exactly those of strictly smaller dimension.
+
+When introducing the operation $\overset{n}{\underset{\ell}{*}}$ with
+$\ell=n-j$, it is seen that this corresponds to choosing a map
+\[ D_n \to (D_n, S_j^+) \amalg_{D_j} (D_n, S_j^-),\]
+satisfying a certain condition *, expressing the formulas I wrote down
+yesterday for $s_1$ and $t_1$ of $u *_\ell v$ -- the formulas
+translate into demanding that the restriction of the looked-for map of
+$D_n$ to its boundary $S_{n-1}$ should be a given map (given at any
+rate, for $\ell\ge2$, in terms of the operation $*_{\ell-1}$, which
+explains the point I made that the $*_\ell$-structure is of order just
+above the $*_{\ell-1}$-structure, namely (inductively) is of order
+$\ell$ \ldots). That the extension of this map of $S_{n-1}$ to $D_n$
+does indeed exist, comes from the fact that the amalgamated sum on the
+right hand side is contractible for obvious reasons.
+
+This gives a clue of what we should call ``standard'' amalgamated sums
+of the cells $D_i$. The first idea that comes to mind is that we
+should insist that the space considered should be contractible,
+excluding amalgamated sums therefore such as
+\[
+\begin{tikzcd}[row sep=tiny]
+  & \bullet \ar[dr] \\ \bullet \ar[ur] \ar[rr] & & \bullet
+\end{tikzcd} \quad\text{or}\quad
+\begin{tikzcd}
+  \bullet \ar[r, bend left] \ar[r, bend right] & \bullet
+\end{tikzcd}\]
+which are circles. This formulation however has the inconvenience of
+not being directly expressed in combinatorial terms. The following
+formulation, which has the advantage of being of combinatorial nature,
+is presumably equivalent to the former, and gives (I expect) a large
+enough notion of ``standardness'' to yield for the corresponding
+notion of \oo-category enough structure for whatever one will ever
+need. In any case, it is\namedpspage{L.7prime}{7'} understood that the ``amalgamated
+sum'' (rather, finite $\varinjlim$) we are considering are of the most
+common type, when $X$ is the finite union of closed subsets $X_i$,
+with given isomorphisms
+\[ X \simeq D_{n(i)},\]
+the intersection of any two of these $X_i\cap X_j$ being a union of
+closed cells both in $D_{n(i)}$ and in $D_{n(j)}$. (This implies in
+fact that it is either a closed cell in both, or the union of two
+closed cells of same dimension $m$ and hence isomorphic to $S_m$, a
+case which will be ruled out anyhow by the triviality condition which
+follows.\footnote{False, [picture of disk divided in three]}) The
+triviality or ``standardness'' condition is now expressed by demanding
+that the set of indices $I$ can be totally ordered, i.e., numbered in
+such a way that we get $X$ by successively ``attaching'' cells
+$D_{n(i)}$ to the space already constructed, $X(i-1)$, by a map from a
+sub-cell of $D_{n(i)}$, $S_j^\xi \to X(i-1)$ ($\xi\in\{\pm1\}$), this
+map of course inducing an isomorphism, more precisely \emph{the}
+standard isomorphism, $\varphi_{n(i)}^\xi : S_j^\xi \simeq D_j$ with
+$S_j^\xi$ one of the two corresponding cells $S_j^+, S_j^-$ in some
+$X_{i'}\simeq D_{n(i')}$. The dual translation of this, in terms of
+fiber products in a category $C$ endowed with objects $F_i$
+($i\in\bN$) and maps $s_1^i,t_1^i$ between these, is clear: for a
+given set of indices $I$ and map $i\mapsto n(i) : I \to \bN$, we
+consider a subobject of $\prod_{i\in I} D_{n(i)}$, which can be
+described by equality relations between iterated sources and targets
+of various components of $u=(u_i)_{i\in I}$ in $P$, the structure of
+the set of relations being such that $I$ can be numbers, from $1$ to
+$N$ say, in such a way that we get in succession $N-1$ relations on
+the $N$ components $u_i$ respectively ($2\le i\le N$), every relation
+being of the type $f(u_i) = g(u_i')$, with $f$ and $g$ being iterated
+source of target maps, and $i'<i$. (Whether source or target depending
+in obvious way on the two signs $\xi,\xi'$.)
+
+\bigbreak
+
+\noindent\hfill\ondate{21.2.}\namedpspage{L.8}{8}\par
+
+% 8
+\hangsection{Description of the universal \emph{primitive} structure.}%
+\label{sec:8}%
+Returning to the amalgamated sum $X = \bigcup_i X_i$, the cellular
+decompositions of the components $X_i \simeq D_{n(i)}$ define a
+cellular decomposition of $X$, whose set of cells with incidence
+relation forms a finite ordered set $K$, finite union of a family of
+subsets $(K_i)_{i\in I}$, with given isomorphisms
+\[ f_i : K_i \simeq \cst J_{n(i)} \quad (i\in I),\]
+where for every index $n\in\bN$, $\cst J_n$ denotes the ordered set of
+the $2n+1$ cells $S_j^\xi$ ($0\le j\le n-1$, $\xi\in\{\pm1\}$), $D_n$
+of the pertinent cellular decomposition of $D_n$. We may without loss
+of generality assume there is no inclusion relation between the $K_i$,
+moreover the standardness condition described above readily translates
+into a condition on this structure $K$, $(K_i)_{i\in I}$, $(f_i)_{i\in
+  I}$, and implies that for $i,i'\in I$, $K_i\to K_{i'}$, is a
+``closed'' subset in the two ordered sets $K_i,K_{i'}$ (namely
+contains with any element $x$ the elements smaller than $x$), and
+moreover isomorphic (for the induced order) to some $\cst J_n$. Thus
+the category $B_0$ can be viewed as the category of such ``standard
+ordered sets'' (with the extra structure on these just said), and the
+category $C_0$ can be defined most simply as the dual category
+$B_0\op$. (NB\enspace the definition of morphisms in $B_0$ is clear I guess
+\ldots) I believe the category $B_0$ is stable under amalgamated sums
+$X \amalg_Z Y$, provided however we insist that the empty structure
+$K$ is \emph{not} allowed -- otherwise we have to restrict to
+amalgamated sums with $Z \ne \emptyset$. It seems finally more
+convenient to exclude the empty structure in $B_0$, i.e.\ to exclude
+the final element from $\bC_0$, for the benefit of being able to
+state that $\bC_0$ (and all categories $\bC_n$\footnote{this is
+  obviously false, see P.S.\ p.12.}) are stable under amalgamated sums,
+and that the functors $\bC_n\to C$ (and ultimately $\bC_\oo\to
+C$) we are interested in are just those commuting to arbitrary binary
+amalgamated sums (without awkward reference to the objects $\boldsymbol F_i$
+and the iterated source and target maps between them\ldots).
+
+% 9
+\hangsection[The main inductive step: just add coherence arrows! The \dots]%
+{The main inductive step: just add coherence arrows! The abridged
+  story of an \texorpdfstring{\textup(}{(}inescapable and
+  irrelevant\texorpdfstring{\textup)}{)} ambiguity}\label{sec:9}%
+The category $\bC_0$ being fairly well understood, it remains to
+complete the construction by the inductive step, passing from $\bC_n$
+to $\bC_{n+1}$. The main properties I have in mind therefore, for the
+sequence of categories $\bC_n$ and their limit $\bC_\oo$, are the
+following two.
+\begin{enumerate}[label=(\Alph*)]
+\item\label{it:8.A} For any $K\in\Ob(\bC_\oo)$ ($=\Ob(\bC_0)$), and any two
+  arrows in $\bC_\oo$
+  \[ f,g : K \rightrightarrows F_i,\]
+  with $i\in\bN$, and such that either $i=0$, or the equalities
+  \begin{equation}\label{eq:8.1}
+    s_1^i\, f = s_1^i\, g , \quad
+    t_1^i\, f = t_1^i\, g\tag{1}
+  \end{equation}
+  hold (case $i\ge1$), there exists $h : K \to F_{i+1}$ such that
+  \begin{equation}\label{eq:8.2}
+    s_1^{i+1}\, h = f, \quad
+    t_1^{i+1}\, h = g.\tag{2}
+  \end{equation}
+\item\label{it:8.B}
+  For any $n\in\bN$, the category $\bC_{n+1}$ is deduced from $\bC_n$
+  by keeping the same objects, and just adding new arrows $h$ as
+  in \ref{it:8.A}, with $f,g$ arrows in $\bC_n$.
+\end{enumerate}
+The\namedpspage{L.8prime}{8'} expression ``deduces from'' in \ref{it:8.B} means that we are
+adding arrows $h: K\to F_i$ (each with preassigned source and target
+in $\bC_n$), with as ``new axioms'' on the bunch of these uniquely
+the two relations \eqref{eq:8.2} of \ref{it:8.A}, the category $\bC_{n+1}$
+being deduced from $\bC_n$ in an obvious way, as the solution of a
+universal problem within the category of all categories where binary
+amalgamated products exist, and ``maps'' between these being functors
+which commute to those fibered products. In practical terms, the
+arrows of $\bC_{n+1}$ are those deduced from the arrows in $\bC_n$ and
+the ``new'' arrows $h$, by combining formal operations of
+composing arrows by $v \circ u$, and taking (binary) amalgamated
+products of arrows.\footnote{This has to be corrected -- amalgamated
+  sums exist in $\bC$, only -- and \emph{those} should be
+  respected.}
+
+NB\enspace Of course the condition \eqref{eq:8.1} in \ref{it:8.A} is necessary for the
+existence of an $h$ satisfying \eqref{eq:8.2}. That it is sufficient
+too can be viewed as an extremely strong, ``universal'' version of
+coherence conditions, concerning the various structures introduced on
+an \oo-groupoid. Intuitively, it means that whenever we have two ways
+of associating to a finite family $(u_i)_{i\in I}$ of objects of an
+\oo-groupoid, $u_i\in F_{n(i)}$, subjected to a standard set of
+relations on the $u_i$'s, an element of some $F_n$, in terms of the
+\oo-groupoid structure only, then we have automatically a ``homotopy''
+between these built in in the very structure of the \oo-groupoid,
+provided it makes at all sense to ask for one (namely provided
+condition \eqref{eq:8.1} holds if $n \ge 1$). I have the feeling
+moreover that conditions \ref{it:8.A} and \ref{it:8.B} (plus the
+relation $\bC_\oo = \varinjlim \bC_n$) is all what will be ever
+needed, when using the definition of the structure species, -- plus of
+course the description of $\bC_0$, and the implicit fact that the
+categories $\bC_n$ are stable under binary fiber products and the
+inclusion functors commute to these.\footnote{Inaccurate; see above}
+Of course, the category which really interests us is $\bC_\oo$, the
+description of the intermediate $\bC_n$'s is merely technical --
+the main point is that there should exist an increasing sequence
+$(\bC_n)$ of subcategories of $\bC_\oo$, having the same objects (and
+the ``same'' fiber-products), such that $\bC_\oo$ should be the
+limit (i.e., every arrow in $\bC_\oo$ should belong to some $\bC_n$),
+and such that the passage from $\bC_n$ to $\bC_{n+1}$
+should satisfy \ref{it:8.B}. It is fairly obvious that these
+conditions alone do by no means characterize $\bC_\oo$ up to
+equivalence, and still less the sequence of its subcategories $\bC_n$.
+The point I wish to make though, before pursuing with a proposal
+of an explicit description, is that \emph{this ambiguity is in the
+  nature of things}. Roughly saying, two different mathematicians,
+working independently on the conceptual problem I had in mind, assming
+they both wind up with some explicit definition, will almost certainly
+get non-equivalent definitions -- namely with non-equivalent
+categories of (set-valued, say) \oo-groupoids! And, secondly and as
+importantly,\namedpspage{L.9}{9} that \emph{this ambiguity however is an
+  irrelevant one}. To make this point a little clearer, I could say
+that a third mathematician, informed of the work of both, will readily
+think out a functor or rather a pair of functors, associating to any
+structure of Mr.\ X one of Mr.\ Y and conversely, in such a way that
+by composition of the two, we will associate to an $X$-structure ($T$
+say) another $T'$, which will not be isomorphic to $T$ of course, but
+endowed with a canonical \oo-equivalence (in the sense of Mr.\ X) $T
+\underset{\oo}{\simeq} T'$, and the same on the Mr.\ Y side. Most
+probably, a fourth mathematician, faced with the same situation as the
+third, will get his own pair of functors to reconcile Mr.\ X and Mr.\
+Y, which very probably won't be equivalent (I mean isomorphic) to the
+previous one. Here however, a fifth mathematician, informed about this
+new perplexity, will probably show that the two $Y$-structures $U$ and
+$U'$, associated by his two colleagues to an $X$-structure $T$, while
+not isomorphic alas, admit however a canonical \oo-equivalence between
+$U$, and $U'$ (in the sense of the $Y$-theory). I could go on with a
+sixth mathematician, confronted with the same perplexity as the
+previous one, who winds up with another \oo-equivalence between $U$
+and $U'$ (without being informed of the work of the fifth), and a
+seventh reconciling them by discovering an \oo-equivalence between
+these equivalences. The story of course is infinite, I better stop
+with seven mathematicians, a fair number nowadays to allow themselves
+getting involved with foundational matters \ldots
+There should be a mathematical statement though resuming in finite
+terms this infinite story, but in order to write it down I guess a
+minimum amount of conceptual work, in the context of a given notion of
+\oo-groupoids satisfying the desiderata \ref{it:8.A} and \ref{it:8.B}
+should be done, and I am by no means sure I will go through this, not
+in this letter anyhow.
+
+% 10
+\hangsection{Cutting down redundancies -- or: ``l'embarras du
+  choix''.}\label{sec:10}%
+Now in the long last the explicit description I promised of $\bC_{n+1}$
+in terms of $\bC_n$. As a matter of fact, I have a handful
+to propose! One choice, about the widest I would think of, is: for
+every pair $(f,g)$ in $\bC_n$ satisfying condition \eqref{eq:8.1}
+of \ref{it:8.A}, add one new arrow $h$. To avoid set-theoretic
+difficulties though, we better first modify the definition of $\bC_0$
+so that the set of its objects should be in the universe we are
+working in, preferably even it be countable. Or else, and more
+reasonably, we will pick one $h$ for every isomorphism class of
+situations $(f,g)$ in $\bC_n$. Another restriction to avoid too
+much redundancy -- this was the first definition actually that flipped
+to my mind the day before yesterday -- is to add a \emph{new} $h$ only
+when there is no ``old'' one, namely in $\bC_n$, serving the same
+purpose. Then it came to my mind that there is a lot of redundancy
+still, thus there would be already\namedpspage{L.9prime}{9'} infinitely many
+operations standing for the single operation $v \overset{i}{\circ} u$
+say, which could be viewed in effect in terms of an arbitrary
+$n$-sequence ($n\ge2$) of ``composable'' $i$-objects $u_1=u, u_2=v,
+u_3, \dots, u_n$. The natural way to meet this ``objection'' would be
+to restrict to pairs $(f,g)$ which cannot be factored non-trivially
+through another objects $K'$ as
+\[\begin{tikzcd}
+  K \ar[r] & K' \ar[r, shift left, "f'"] \ar[r, shift right, swap,
+  "g'"] & F_i \end{tikzcd}.\]
+But even with such restrictions, there remain a lot of redundancies --
+and this again seems to me in the nature of things, namely that there
+is no really natural, ``most economic'' way for achieving condition
+\ref{it:8.A}, by a stepwise construction meeting condition
+\ref{it:8.B}. For instance, in $\bC_1$ already we will have not
+merely the compositions $v \overset{i}{\circ} u$, but at the same time
+simultaneous compositions
+\begin{equation}
+  \label{eq:10.star}
+  u_n \circ u_{n-1} \circ \dots \circ u_1 \tag{*}
+\end{equation}
+for ``composable'' sequences of $i$-objects ($i\ge1$), without
+reducing this (as is customary) to iteration of the binary composition
+$v \circ u$.
+Of course using the binary composition, and more generally iteration
+of $n'-ary$ compositions with $n'<n$ (when $n\ge3)$, we get an
+impressive bunch of operations in the $n$ variables $u_1, \dots, u_n$,
+serving the same purpose as \eqref{eq:10.star}. All these will be tied
+up by homotopies in the next step $\bC_2$. We would like to think
+of this set of homotopies in $\bC_2$ as a kind of ``transitive
+system of isomorphisms'' (of associativity), now the transitivity
+relations one is looking for will be replaced by homotopies again
+between compositions of homotopies, which will enter in the picture
+with $\bC_3$, etc. Here the infinite story is exemplified by the
+more familiar situation of the two ways in which one could define a
+``$\otimes$-composition with associativity'' in a category, starting
+either in terms of a binary operation, or with a bunch of $n$-ary
+operations -- with, in both cases the associativity isomorphisms being
+an essential part of the structure. Here again, while it is generally
+(and quite validly) felt that the two points of view are equivalent;
+and both have their advantages and their drawbacks, still it is not
+true, I believe, that the two categories of algebraic structures
+``category with associative $\otimes$-operation'', using one or the
+other definition, are equivalent.\footnote{even not in the compoid???
+  context.} Here the story though of the relation between the two
+notions is a finite one, due to the fact that it is related to the
+notion of $2$-categories or $2$-groupoids, instead of \oo-groupoids as
+before\ldots
+
+Thus I don't feel really like spending much energy in cutting down
+redundancies, but prefer working with a notion of \oo-groupoid which
+remains partly indeterminate, the main features being embodied in the
+conditions \ref{it:8.A} and \ref{it:8.B} and in the description of
+$\bC_0$, without other specification.\namedpspage{L.10}{10}
+
+% 11
+\hangsection[Returning to the topological model (the canonical
+functor \dots]%
+{Returning to the topological model \texorpdfstring{\textup(}{(}the
+  canonical functor from spaces to
+  ``\texorpdfstring{\oo}{oo}-groupoids''\texorpdfstring{\textup)}{)}.}%
+\label{sec:11}%
+One convenient way for constructing a category $\bC_\oo$ would be
+to define for every $K,L\in\Ob(\bC_0) = \Ob(B_0)$ the set
+$\Hom_\oo(K,L)$ as a subset of the set $\Hom(\abs L,\abs K)$ of
+continuous maps between the geometric realizations of $L$ and $K$ in
+terms of gluing together cells $D_i$, the composition of arrows in
+$\bC_\oo$ being just composition of maps. This amounts to defining
+$\bC_\oo$ as the dual of a category $\bB_\oo$ of topological
+descriptions. It will be sufficient to define for every cell $D_n$ and
+every subset $\Hom_\oo(D_n,\abs K)$ of $\Hom(D_n,\abs K)$, satisfying
+the two conditions:
+\begin{enumerate}[label=(\alph*)]
+\item\label{it:11.a}
+  stability by compositions $D_n \to \abs K \to \abs{K'}$, where $K\to
+  K'$ is an ``allowable'' continuous map, namely subjected only to the
+  condition that its restriction to any standard subcell $D_{n'}
+  \subset \abs K$ is again ``allowable'', i.e., in $\Hom_\oo$.
+\item\label{it:11.b}
+  Any ``allowable'' map $S_n \to \abs K$ (i.e., whose restrictions to
+  $S_n^+$ and $S_n^-$ are allowable) extends to an allowable map
+  $D_{n+1}\to\abs K$.
+\end{enumerate}
+
+Condition \ref{it:11.a} merely ensures stability of allowable maps
+under composition, and the fact that $\bB_\oo$ (endowed with the
+allowable maps as morphisms) has the correct binary amalgamated sums,
+whereas \ref{it:11.b} expresses condition \ref{it:11.a} on $\bC_\oo$.
+These conditions are satisfied when we take as $\Hom_\oo$
+subsets defined by tameness conditions (such as piecewise linear for
+suitable piecewise linear structure on the $D_n$'s, or differentiable,
+etc.). The condition \ref{it:11.b} however is of a subtler nature in
+the topological interpretation and surely not met by such sweeping
+tameness requirements only! Finally, the question as to whether we can
+actually in this way describe an ``acceptable'' category $\bC_\oo$,
+by defining sets $\Hom_\oo$, namely describing $\bC_\oo$ in terms
+of $\bB_\oo$, seems rather subsidiary after all. We may think of
+course of constructing stepwise $\bB_\oo$ via subcategories $\bB_n$,
+by adding stepwise new arrows in order to meet condition
+\ref{it:11.b}, thus paraphrasing condition \ref{it:8.B} for passage
+from $\bC_n$ to $\bC_{n+1}$ -- but it is by no means clear that
+when passing to the category $\bB_{n+1}$ by composing maps of $\bB_n$
+and ``new'' ones, and using amalgamated sums too, there might not
+be some undesirable extra relations in $\bB_{n+1}$, coming from the
+topological interpretation of the arrows in $\bC_{n+1}$ as maps. To
+say it differently, universal algebra furnishes us readily with an
+acceptable sequence of categories $\bC_n$ and hence $\bC_\oo$,
+and by the universal properties of the $\bC_n$ in terms of
+$\bC_{n+1}$, we readily get (using arbitrary choices) a contravariant
+functor $K \mapsto \abs K$ from $\bC_\oo$ to the category of
+topological spaces (i.e., a co-\oo-groupoid in \cTop), but it is by no
+means clear that this functor is faithful -- and it doesn't really
+matter after all!\namedpspage{L.10prime}{10'}
+
+% 12
+\hangsection{About replacing spaces by objects of a ``model
+  category''.}\label{sec:12}%
+I think I really better stop now, except for one last comment. The
+construction of a co-\oo-groupoid in \cTop, giving rise to the
+fundamental functor
+\[ \cTop \longrightarrow (\text{\oo-groupoids}),\]
+generalizes, as I already alluded to earlier, to the case when \cTop{}
+is replaced by an arbitrary ``model category'' $M$ in your sense. Here
+however the choices occur not only stepwise for the primary,
+secondary, ternary etc.\ structures, but already for the primitive
+structures, namely by choice of objects $D_i$ ($i\in\bN$) in $M$, and
+source and target maps $D_i \rightrightarrows D_{i+1}$. These choices
+can be made inductively, by choosing first for $D_0$ the final object,
+or more generally any object which is fibrant and trivial (over the
+final objects), $D_{-1}$ being the initial object, and defining
+further $S_0 = D_0 \amalg_{D_{-1}} D_0 = D_0 \amalg D_0$ with obvious
+maps $\psi_0^+,\psi_0^- : D_0 \to S_0$, and then, if everything is
+constructed up to $D_n$ and $S_n = (D_n,\varphi_{n-1}^+)
+\amalg_{D_{n-1}} (D_n,\varphi_{n-1}^-)$, defining $D_{n+1}$ as any
+fibrant and trivial object together with a cofibrant map
+\[ S_n \to D_{n+1}, \]
+and $\varphi_n^+, \varphi_n^-$ as the compositions of the latter with
+$\psi_n^+,\psi_n^-: D_n \rightrightarrows S_n$.
+Using this and amalgamated sums in $M$, we get our functor
+\[ \bB_0 = \bC_0\op \to M , \quad K\mapsto \abs K_M,\]
+commuting with amalgamated sums, which we can extend stepwise through
+the $\bC_n\op$'s to a functor $\bB_\oo = \bC_\oo\op \to M$,
+provided we know that the objects $\abs K_M$ of $M$ ($K\in\Ob\bC_0$)
+obtained by ``standard'' gluing of the $D_n$'s in $M$, are again
+fibrant and trivial -- and I hope indeed that your axioms imply that,
+via, say, that if $Z \to X$ and $Z\to Y$ are cofibrant and $X,Y,Z$ are
+fibrant and trivial, then $X \amalg_Z Y$ is fibrant and trivial\ldots
+
+Among the things to be checked is of course that when we localize the
+category of \oo-groupoids with respect to morphisms which are ``weak
+equivalences'' in a rather obvious sense (NB\enspace the definition of the
+$\Pi_i$'s of an \oo-groupoid is practically trivial!), we get a
+category equivalent to the usual homotopy category \Hot. Thus we get a
+composed functor
+\[ M \to (\text{\oo-groupoids}) \to \Hot,\]
+as announced. I have some intuitive feeling of what this functor
+stands for, at least when $M$ is say the category of semisimplicial
+sheaves, or (more or less equivalently) of $n$-gerbes or \oo-gerbes on
+a given topos: namely it should correspond to the operation of
+``integration'' or ``sections'' for $n$-gerbes (more generally for
+$n$-stacks) over a topos -- which is indeed \emph{the} basic operation
+(embodying non-commutative cohomology objects of the topos) in
+``non-commutative homological algebra''.
+
+I guess that's about it for today. It's getting late and time to go to
+bed! Good night.
+
+\bigbreak
+
+% 13
+\noindent\hfill\ondate{22.2.}1983\namedpspage{L.11}{11}\par
+
+\hangsection[An urgent reflection on proper names: ``Stacks''
+  and \dots]%
+  {An urgent reflection on proper names: ``Stacks'' and
+  ``coherators''.}\label{sec:13}%
+It seems I can't help pursuing further the reflection I started with
+this letter! First I would like to come back upon terminology. Maybe
+to give the name of $n$-groupoids and \oo-groupoids to the objects I
+was after is not proper, for two reasons: a) it conflicts with a
+standing terminology, applying to structure species which are
+frequently met and deserve names of their own, even if they turn out
+to be too restrictive kind of objects for the use I am having in mind
+-- so why not keep the terminology already in use, especially for
+two-groupoids, which is pretty well suited after all; b) the structure
+species I have in mind is not really a very well determined one, it
+depends as we saw on choices, without any one choice looking
+convincingly better than the others -- so it would be a mess to give
+an unqualified name to such structure, depending on the choice of a
+certain category $\bC_\oo = \bC$. I have been thinking of the
+terminology $n$-stack and \oo-stack (stack = ``champ'' in French), a
+name introduced in Giraud's book (he was restricting to champs =
+1-champs), which over a topos reduced to a one-point space reduces in
+his case to the usual notion of a category, i.e., $1$-category. Here
+of course we are thinking of ``stacks of groupoids'' rather than
+arbitrary stacks, which I would like to call (for arbitrary order
+$n\in\bN$ or $n=\oo$) $n$-Gr-stack -- suggesting evident ties with the
+notion of Gr-categories, we should say Gr-$1$-categories, of Mme Hoang
+Xuan Sinh. One advantage of the name ``stack'' is that the use it had
+so far spontaneously suggests the extension of these notions to the
+corresponding notions over an arbitrary topos, which of course is what
+I am after ultimately. Of course, when an ambiguity is possible, we
+should speak of $n$-$\bC$-stacks -- the reference to $\bC$
+should make superfluous the ``Gr'' specification. Thus $n$-$\bC$-stacks
+are essentially the same as $n$-$\bC$-stacks over the
+final topos, i.e., over a one point space. When both $\bC$ and
+``Gr'' are understood in a given context, we will use the terminology
+$n$-stack simply, or even ``stack'' when $n$ is fixed throughout. Thus
+it will occur that in certain contexts ``stack'' will just mean a
+usual groupoid, in others it will mean just a category, but when $n=2$
+it will not mean a usual $2$-groupoid, but something more general,
+defined in terms of $\bC$.
+
+The categories $\bC=\bC_\oo$ described before merit a name too
+-- I would like to call them ``coherators'' (``coh\'ereurs'' in
+French). This name is meant to suggest that $\bC$ embodies a
+hierarchy of coherence relations, more accurately of coherence
+``homotopies''. When dealing with stacks, the term
+\emph{$i$-homotopies} (rather than $i$-objects or $i$-arrows) for the
+elements of the $i$\textsuperscript{th} component $F_i$ of a stack
+seems to me the most suggestive -- they will of course be denoted
+graphically by arrows,\namedpspage{L.11prime}{11'} such as $h: f\to g$ in the
+formulation of \ref{it:8.A} yesterday. More specifically, I will call
+coherator any category \emph{equivalent} to a category $\bC_\oo$ as
+constructed before. Thus a coherator is stable under binary fiber
+products,\footnote{false, see PS} moreover the $F_i$ are recovered up
+to isomorphism as the indecomposable elements of $\bC$ with respect
+to amalgamation. However, in a category $\bC_\oo$, the objects
+$\boldsymbol F_i$ have non-trivial automorphisms -- namely the ``duality
+involutions'' and their compositions (the group of automorphisms of
+$\boldsymbol F_i$ should turn out to be canonically isomorphic to
+$(\pm1)^i$),\footnote{false, see below} in other words by the mere
+category structure of a coherator we will not be able to recover the
+objects $\boldsymbol F_i$ in $\bC$ up to unique isomorphism. Therefore, in
+the structure of a coherator should be included, too, the choice of
+the basic indecomposable objects $\boldsymbol F_i$ (one in each isomorphism
+class), and moreover the arrows $\cst s_1^i,\cst t_1^i : \boldsymbol F_i
+\rightrightarrows \boldsymbol F_{i-1}$ for $i\ge1$ (a priori, only the
+\emph{pair} $(\cst s_1^i,\cst t_1^i)$ can be described intrinsically
+in terms of the category structure of $\bC$, once $\boldsymbol F_i$ and
+$\boldsymbol F_{i-1}$ are chosen\ldots). But it now occurs to me that we
+don't have to put in this extra structure after all -- while the
+$\boldsymbol F_i$'s separately do have automorphisms, the system of objects
+$(\boldsymbol F_i)_{i\in\bN}$ and of the maps $(\cst s_1^i)_{i\ge1}$ and $(\cst
+t_1^i)_{i\ge1}$ has only the trivial automorphism (all this of course
+is heuristics, I didn't really prove anything -- but the structure of
+the full subcategory of a $\bC_\oo$ formed by the objects $\boldsymbol F_i$ seems
+pretty obvious\ldots). To finish getting convinced that the
+mere category structure of a coherator includes already all other
+relevant structure, we should still describe a suitable intrinsic
+filtration by subcategories $\bC_n$. We define the $\bC_n$
+inductively, $\bC_0$ being the ``primitive structure'' (the arrows
+are those deducible from the source and target arrows by composition
+and fiber products), and $\bC_{n+1}$ being defined in terms of
+$\bC_n$ as follows: add to $\Fl \bC_n$ all arrows of $\bC$ of
+the type $h: K \to \boldsymbol F_i$ ($i\ge1$) such that $\cst s_1^i\, h$ and
+$\cst t_1^i\,h$ are in $\bC_n$, and the arrows deduced from the
+bunch obtained by composition and fibered products.\footnote{This may
+  give however \emph{too large} a category $\bC_{n+1}$.} In view of
+these constructions, it would be an easy exercise to give an intrinsic
+characterization of a coherator, as a category satisfying certain
+internal properties.
+
+I was a little rash right now when making assertions about the
+structure of the group of automorphisms of $\boldsymbol F_i$ -- I forgot that
+two days ago I pointed out to myself that even the basic operation
+$\inv_i$ upon $\boldsymbol F_i$ need not even be involutions!\footnote{Nor
+  even automorphisms} However, I just checked that if in the inductive
+construction of coherators $\bC_\oo$ given yesterday, we insist on
+the most trivial irredundancy condition (namely that we don't add a
+``new'' homotopy $h: f\to g$ when there is already an old one), then
+any morphism $h: \boldsymbol F_i \to \boldsymbol F_i$ such that $\cst s\,f=\cst s$
+and $\cst t\,f=\cst t$, is the identity -- and that\namedpspage{L.12}{12}
+implies inductively that an automorphism of the system of $\boldsymbol F_i$'s
+related by the source and target maps $\cst s_1^i,\cst t_1^i$ is the
+identity. Thus it is correct after all, it seems, that the category
+structure of a coherator implies all other structure relevant to
+us.\footnote{Maybe false; it is safer to give moreover the subcategory
+  $\bC_0$.}
+
+I do believe that the description given so far of what I mean by a
+coherator, namely something acting like a kind of pattern in order to
+define a corresponding notion of ``stacks'' (which in turn should be
+the basic coefficient objects in non-commutative homological algebra,
+as well as a convenient description of homotopy types) embodies some
+of the essential features of the theory still in embryo that wants to
+be developed. It is quite possible of course that some features are
+lacking still, for instance that some extra conditions have to be
+imposed upon $\bC$, possibly of a very different nature from mere
+irredundancy conditions (which, I feel, are kind of irrelevant in this
+set-up). Only by pushing ahead and working out at least in outline the
+main aspects of the formalism of stacks, will it become clear whether
+or not extra conditions on $\bC$ are needed. I would like at least
+to make a commented list of these main aspects, and possibly do some
+heuristic pondering on some of these in the stride, or afterwards. For
+today it seems a little late though -- I have been pretty busy with
+non-mathematical work most part of the day, and the next two days I'll
+be busy at the university. Thus I guess I'll send off this letter
+tomorrow, and send you later an elaboration (presumably much in the
+style of this unending letter) if you are interested. In any case I
+would appreciate any comments you make -- that's why I have been
+writing you after all! I will probably send copies to Ronnie Brown,
+Luc Illusie and Jean Giraud, in case they should be interested (I
+guess at least Ronnie Brown is). Maybe the theory is going to take off
+after all, in the long last!
+
+\bigskip
+
+Very cordially yours
+
+\bigskip
+
+PS (25.2.)\enspace I noticed a rather silly mistake in the notes of two days
+ago, when stating that the categories $\bC_n$ admit fiber products:
+what is true is that the category $\bC_0$ has fiber products (by
+construction, practically), and that these are fiber products also in
+the categories $\bC_n$ (by construction equally), i.e., that the
+inclusion functors $\bC_0 \to \bC_n$ commute to fiber
+products. Stacks in a category $C$ correspond to functors $\bC_\oo\to
+C$ whose restriction to $\bC_0$ commutes with fiber
+products. I carried the mistake along in the yesterday notes -- it
+doesn't really change anything substantially. I will have to come back
+anyhow upon the basic notion of a coherator\ldots
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main.tex"
+%%% End:
