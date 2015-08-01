@@ -27,8 +27,8 @@ To Do List
 - proof-read, check kerning, add more notes
 - put in more forward references to corrections and errata
 - figure out missing bits:
--- many bits on page 7,8
--- bits on page 15,16
--- assumption on page 30
--- footnote on page 115
--- rest of page 246
+  * many bits on page 7,8
+  * "highlighted" bits on page 15,16
+  * the assumption on page 30
+  * the footnote on page 115
+  * the rest of page 246
