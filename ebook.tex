@@ -367,8 +367,7 @@
   \phantomsection%
   \markright{\memUChead{\S\thesection\enspace #1}}%
   \addcontentsline{toc}{section}{\numberline{\thesection}#2}%
-  \checkoddpage%
-  \marginpar{{\ifoddpage\relax\else{$\phantom{1}$\\}\fi}\itshape #2}%
+  \marginpar{\itshape #2}%
   \ignorespaces%
 }
 \makeatother
@@ -384,16 +383,6 @@
 }
 \setaftersubsecskip{-1em}
 \maxsecnumdepth{subsection}
-
-% \setsecnumformat{\llap{\@nameuse{the#1}\ }}
-% \newcommand{\hangsection}[2][]{%
-%   \setcounter{footnote}{0}%
-%   \savebox{\@tempboxa}{\normalfont\bfseries\ }%
-%   \section[#2][]{#1}\hspace*{-\wd\@tempboxa}%\hspace*{-.75em}
-%   \checkoddpage%
-%   \marginpar{{\ifoddpage\relax\else{$\phantom{1}$\\}\fi}\itshape #2}%
-% }
-% \setaftersecskip{0pt}
 
 %%% Named labels
 \makeatletter
@@ -414,7 +403,6 @@
 \newcommand*{\uphat}{^{\vbox to 0.8ex{\hbox{\large$\Hat$}\vss}}}
 \newcommand*{\adjuphat}{^{\vbox to 0.8ex{\hbox{\!\large$\Hat$}\vss}}}
 \newcommand*{\upvee}{^{\vbox to 0.8ex{\hbox{\large$\Vee$}\vss}}}
-%\newcommand*{\uphat}{\widehat{\phantom{,,}}}
 
 %%% Lowered widetilde courtesy of
 %%% https://tex.stackexchange.com/questions/3682/how-do-i-lower-the-widetilde-accent-i-e-move-it-closer-to-the-variable
@@ -679,8 +667,7 @@
 \newcommand*{\eqdef}{\overset{\textup{def}}{=}}
 \newcommand{\namedpspage}[2]{%
   \phantomlabel{p:#1}{#2}%
-  \checkoddpage%
-  \marginpar{{\ifoddpage\relax\else{$\phantom{1}$\hfill}\fi}[p.\ #2]}}
+  \marginpar{[p.\ #2]}
 \newcommand{\pspage}[1]{\namedpspage{#1}{#1}}
 \newcommand{\scrcomment}[1]{\marginpar{\color{DarkRed}{[#1]}}}
 \newcommand{\scrcommentinline}[1]{%
