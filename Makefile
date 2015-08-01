@@ -5,6 +5,9 @@ chapters=ps1.tex ps2.tex ps3.tex ps4.tex ps5.tex ps6.tex ps7.tex
 main.pdf : main.tex ps.bib preface.tex $(chapters) simplex.pdf square.pdf globe.pdf
 	latexmk -pdf main
 
+ebook.pdf : ebook.tex ps.bib preface.tex $(chapters) simplex.pdf square.pdf globe.pdf
+	latexmk -pdf ebook
+
 simplex.pdf : simplex-page.tex
 	pdflatex simplex-page
 	pdfcrop simplex-page.pdf simplex.pdf
