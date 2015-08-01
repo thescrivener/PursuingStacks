@@ -3,7 +3,7 @@ all : main.pdf
 chapters=ps1.tex ps2.tex ps3.tex ps4.tex ps5.tex ps6.tex ps7.tex
 
 main.pdf : main.tex ps.bib preface.tex $(chapters) simplex.pdf square.pdf globe.pdf
-	latexmk main
+	latexmk -pdf main
 
 simplex.pdf : simplex-page.tex
 	pdflatex simplex-page
