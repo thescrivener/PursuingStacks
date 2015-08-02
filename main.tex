@@ -1,7 +1,7 @@
 %% Anti-Copyright 2015 - the scrivener
 
 \RequirePackage{pdf14}
-\documentclass[letterpaper,10pt,leqno,twoside,openright]{memoir}
+\documentclass[10pt,leqno,\OPTonetwo,openright]{memoir}
 \usepackage{microtype}
 \usepackage{mempatch}
 \usepackage[utf8]{inputenc}
@@ -308,16 +308,16 @@
 \setpnumwidth{2.55em}
 
 %%% Layout
-\stockletter
-\pageletter
-\settypeblocksize{44\baselineskip}{24.5pc}{*}
+\OPTstockformat
+\OPTpageformat
+\settypeblocksize{*}{24.5pc}{*}
 \setlrmargins{1in}{*}{*}
-\setulmargins{1in}{*}{*}
+\setulmarginsandblock{1in}{2in}{*}
 \setheadfoot{\baselineskip}{2\baselineskip}
 \setheaderspaces{*}{2\baselineskip}{*}
 \setmarginnotes{2pc}{12pc}{\baselineskip}
 \checkandfixthelayout
-\raggedbottom %sectiontrue
+\raggedbottom
 \setlength{\parindent}{1em}
 
 %%% Marginal revolution
@@ -360,7 +360,7 @@
 \newcommand*{\my@test@it}{it}
 \def\hangsection{\@dblarg\@hangsection}
 \def\@hangsection[#1]#2{%
-  \leavevmode\par\everypar{}\noindent%
+  \leavevmode\par\needspace{3\baselineskip}\everypar{}\noindent%
   \setcounter{footnote}{0}%
   \refstepcounter{section}%
   \llap{\normalfont\bfseries\large\thesection\quad}%
@@ -368,9 +368,10 @@
   \markright{\memUChead{\S\thesection\enspace #1}}%
   \addcontentsline{toc}{section}{\numberline{\thesection}#2}%
   \checkoddpage%
-  \marginpar{{\ifoddpage\relax\else{$\phantom{1}$\\}\fi}\itshape #2}%
+  \marginpar{\if@twoside\ifoddpage\relax\else{$\phantom{1}$\\}\fi\fi\itshape #2}%
   \ignorespaces%
 }
+\def\presectionfill{\noindent\needspace{8\baselineskip}\hfill}
 \makeatother
 
 % from: http://tex.stackexchange.com/questions/8486/changing-the-section-number-to-a-fraction
@@ -385,16 +386,6 @@
 \setaftersubsecskip{-1em}
 \maxsecnumdepth{subsection}
 
-% \setsecnumformat{\llap{\@nameuse{the#1}\ }}
-% \newcommand{\hangsection}[2][]{%
-%   \setcounter{footnote}{0}%
-%   \savebox{\@tempboxa}{\normalfont\bfseries\ }%
-%   \section[#2][]{#1}\hspace*{-\wd\@tempboxa}%\hspace*{-.75em}
-%   \checkoddpage%
-%   \marginpar{{\ifoddpage\relax\else{$\phantom{1}$\\}\fi}\itshape #2}%
-% }
-% \setaftersecskip{0pt}
-
 %%% Named labels
 \makeatletter
 \def\namedlabel#1#2{\begingroup
@@ -407,6 +398,22 @@
   \phantomsection\label{#1}\endgroup
 }
 \makeatother
+
+%%% Original page numbers and scrivener's comments in margin
+\makeatletter
+\newcommand{\namedpspage}[2]{%
+  \phantomlabel{p:#1}{#2}%
+  \checkoddpage%
+  \marginpar{%
+    \if@twoside\ifoddpage\relax\else\noindent\hfill\fi\fi%
+    [p.\ #2]}}
+\makeatother
+\newcommand{\pspage}[1]{\namedpspage{#1}{#1}}
+\newcommand{\scrcomment}[1]{\marginpar{\color{DarkRed}{[#1]}}}
+\newcommand{\scrcommentinline}[1]{%
+  {\color{DarkRed}{[#1]}}}
+\newcommand{\ondate}[1]{\namedlabel{date:#1}{#1}}
+\newcommand{\alsoondate}[1]{#1}
 
 %%% Completion hat and its dual
 \mathchardef\Hat="705E
@@ -677,16 +684,6 @@
   {#1 \mathrel{}\mathclose{}\delimsize|\mathopen{}\mathrel{} #2}
 \DeclarePairedDelimiter\denot{\llbracket}{\rrbracket}
 \newcommand*{\eqdef}{\overset{\textup{def}}{=}}
-\newcommand{\namedpspage}[2]{%
-  \phantomlabel{p:#1}{#2}%
-  \checkoddpage%
-  \marginpar{{\ifoddpage\relax\else{$\phantom{1}$\hfill}\fi}[p.\ #2]}}
-\newcommand{\pspage}[1]{\namedpspage{#1}{#1}}
-\newcommand{\scrcomment}[1]{\marginpar{\color{DarkRed}{[#1]}}}
-\newcommand{\scrcommentinline}[1]{%
-  {\color{DarkRed}{[#1]}}}
-\newcommand{\ondate}[1]{\namedlabel{date:#1}{#1}}
-\newcommand{\alsoondate}[1]{#1}
 
 \begin{document}
 
