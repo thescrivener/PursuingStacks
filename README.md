@@ -34,7 +34,6 @@ To Do List
   * one bit on page 12 (section 19, djvu p. 46, highlighted)
   * some bits on page 15,16 (section 21, djvu p. 49-50, highlighted)
   * "relato?" on page 29 (section 27, djvu p. 63, word running off page)
-  * the assumption on page 30 (section 28, djvu p. 64, highlighted)
   * the footnote on page 115 (section 51, djvu p. 149, punched hole and handwriting)
   * the rest of page 246 (end of section 78, djvu p. 280, missing in scan)
   * the footnote on page 449 (section 111, djvu p. 483, handwriting)
